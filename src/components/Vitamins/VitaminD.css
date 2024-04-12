@@ -1,0 +1,113 @@
+
+.vitd{
+    margin: 40px 50px;
+    background-color: rgb(226, 243, 242);
+    padding:1px 10px;
+   }
+   .vitd-main{
+       display: flex;
+       flex-direction: row;
+       margin-bottom: 40px;
+   }
+   .vitd-img{
+       width: 50%;
+       height: 450px;
+       border-radius: 3px;
+   }
+   
+   .vitd-right{
+       width: 50%;
+       height: 100%;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       background-color: #f5f5f5;
+       padding: 25px;
+       gap: 25px;
+       padding-top:0px;
+       
+   }
+   .vitd-title{
+     font-weight: 500;
+     font-size: 70px;
+     padding-top:0;
+   }
+   
+   .vitdminb-list {
+     list-style-type: none;
+     
+   }
+   
+   .vitdminb-list li {
+     padding: 25px;
+     border-bottom: 1px solid #9b9a9a; 
+     background-color: #f6f3ea;/* Add a border between list items */
+   }
+   
+   .vitdminb-list li.alternate {
+    padding:18px;
+     background-color: #d6f8f5; /* Alternate background color */
+   }
+   .vitdminb-list {
+    display: flex;
+    flex-direction: row;
+    padding:15px;
+    gap:1px;
+  }
+   /* Hover effect */
+   .vitamin-list li:hover {
+     background-color: #e8e4e4; /* Lighter background color on hover */
+   }
+   .vitd-title{
+       width: 50%;
+       padding-top: 40px;
+       height: 100%;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       font-size: 2rem;
+       font-weight: 700;
+       color: #000;
+       text-transform: uppercase;
+       letter-spacing: 2px;
+   }
+   .vitd-right li{
+       font-size:20px;
+   }
+   .vitd-intake-p{
+       font-size: 19px;
+   }
+   
+   .vitd-down {
+       display: flex;
+       justify-content: flex-start;
+       margin-left: 120px;
+       gap:30px;
+     }
+     
+     .vitd-down-content {
+       display: flex;
+       align-items: center;
+       gap:120px;
+     }
+     .vitd-down-h1:hover{
+       font-size: 40px;
+       font-family: 'Roboto', sans-serif;
+       font-style: italic;
+       column-rule-color: #000000;
+     }
+     
+     .imgd {
+       width:650px;
+       height: 420px;
+       margin-left: 15px;
+       border-radius: 15px;
+       padding-bottom: 5px;
+     }
+     
+   span {
+     content: "\2190";
+     border: #000;
+     border-width: 5px;
+   }

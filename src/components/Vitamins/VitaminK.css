@@ -1,0 +1,114 @@
+
+
+.vitk{
+    margin: 40px 50px;
+    background-color: rgb(219, 249, 222);
+    padding:1px 10px;
+   }
+   .vitk-main{
+       display: flex;
+       flex-direction: row;
+       margin-bottom: 40px;
+   }
+   .vitk-img{
+       width: 50%;
+       height: 450px;
+       border-radius: 3px;
+   }
+   
+   .vitk-right{
+       width: 50%;
+       height: 455px;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       background-color: #f5f5f5;
+       padding: 25px;
+       gap: 25px;
+       padding-top:0px;
+       
+   }
+   .vitk-title{
+     font-weight: 500;
+     font-size: 70px;
+     padding-top:0;
+   }
+   
+   .vitkminb-list {
+     list-style-type: none;
+     
+   }
+   
+   .vitkminb-list li {
+     padding: 25px;
+     border-bottom: 1px solid #e8eddf; 
+     background-color: #dedddd;/* Add a border between list items */
+   }
+   
+   .vitkminb-list li.alternate {
+    padding:18px;
+     background-color: #d2f1bf; /* Alternate background color */
+   }
+   .vitkminb-list {
+    display: flex;
+    flex-direction: row;
+    padding:15px;
+    gap:1px;
+  }
+   /* Hover effect */
+   .vitkmin-list li:hover {
+     background-color: #e8e4e4; /* Lighter background color on hover */
+   }
+   .vitk-title{
+       width: 50%;
+       padding-top: 40px;
+       height: 100%;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       font-size: 2rem;
+       font-weight: 700;
+       color: #000;
+       text-transform: uppercase;
+       letter-spacing: 2px;
+   }
+   .vitk-right li{
+       font-size:20px;
+   }
+   .vitk-intake-p{
+       font-size: 19px;
+   }
+   
+   .vitk-down {
+       display: flex;
+       justify-content: flex-start;
+       margin-left: 120px;
+       gap:30px;
+     }
+     
+     .vitk-down-content {
+       display: flex;
+       align-items: center;
+       gap:120px;
+     }
+     .vitk-down-h1:hover{
+       font-size: 40px;
+       font-family: 'Roboto', sans-serif;
+       font-style: italic;
+       column-rule-color: #000000;
+     }
+     
+     .imgk {
+       width:650px;
+       height: 450px;
+       margin-left: 15px;
+       border-radius: 15px;
+       padding-bottom: 5px;
+     }
+     
+   span {
+     content: "\2190";
+     border: #000;
+     border-width: 5px;
+   }

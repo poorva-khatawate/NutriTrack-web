@@ -1,0 +1,111 @@
+
+.vitb{
+  margin: 40px 50px;
+  background-color: rgb(252, 237, 230);
+  padding:1px 10px;
+ }
+ .vitb-main{
+     display: flex;
+     flex-direction: row;
+     margin-bottom: 40px;
+ }
+ .vitb-img{
+     width: 50%;
+     height: 450px;
+     border-radius: 3px;
+ }
+ 
+ .vitb-right{
+     width: 50%;
+     height: 455px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     background-color: #f5f5f5;
+     padding: 25px;
+     gap: 25px;
+     
+ }
+ .vitb-title{
+   font-weight: 500;
+   font-size: 70px;
+ }
+ 
+ .vitbminb-list {
+   list-style-type: none;
+   
+ }
+ 
+ .vitbminb-list li {
+   padding: 20px;
+   border-bottom: 1px solid #9b9a9a; 
+   background-color: #f0e9f6;/* Add a border between list items */
+ }
+ 
+ .vitbminb-list li.alternate {
+  padding:8px;
+   background-color: #f7d2d2; /* Alternate background color */
+ }
+ .vitbminb-list {
+  display: flex;
+  flex-direction: row;
+  padding:15px;
+  gap:1px;
+}
+ /* Hover effect */
+ .vitamin-list li:hover {
+   background-color: #e8e4e4; /* Lighter background color on hover */
+ }
+ .vitb-title{
+     width: 50%;
+     padding-top: 40px;
+     height: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-size: 2rem;
+     font-weight: 700;
+     color: #000;
+     text-transform: uppercase;
+     letter-spacing: 2px;
+ }
+ .vitb-right li{
+     font-size:20px;
+ }
+ .vitb-intake-p{
+     font-size: 19px;
+ }
+ 
+ .vitb-down {
+     display: flex;
+     justify-content: flex-start;
+     margin-left: 120px;
+     gap:30px;
+   }
+   
+   .vitb-down-content {
+     display: flex;
+     align-items: center;
+     gap:120px;
+   }
+   .vitb-down-h1:hover{
+     font-size: 40px;
+     font-family: 'Roboto', sans-serif;
+     font-style: italic;
+     column-rule-color: #000000;
+   }
+   
+   .imgb {
+     width:650px;
+     height: 420px;
+     margin-left: 15px;
+     border-radius: 15px;
+     padding-bottom: 5px;
+   }
+   
+ span {
+   content: "\2190";
+   border: #000;
+   border-width: 5px;
+ }

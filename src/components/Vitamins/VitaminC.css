@@ -1,0 +1,113 @@
+
+.vitc{
+    margin: 40px 50px;
+    background-color: rgb(249, 247, 228);
+    padding:1px 10px;
+   }
+   .vitc-main{
+       display: flex;
+       flex-direction: row;
+       margin-bottom: 40px;
+   }
+   .vitc-img{
+       width: 50%;
+       height: 450px;
+       border-radius: 3px;
+   }
+   
+   .vitc-right{
+       width: 50%;
+       height: 450px;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       background-color: #f5f5f5;
+       padding: 25px;
+       gap: 25px;
+       padding-top:0px;
+       
+   }
+   .vitc-title{
+     font-weight: 500;
+     font-size: 70px;
+     padding-top:0;
+   }
+   
+   .vitcminb-list {
+     list-style-type: none;
+     
+   }
+   
+   .vitcminb-list li {
+     padding: 25px;
+     border-bottom: 1px solid #9b9a9a; 
+     background-color: #fbe7df;/* Add a border between list items */
+   }
+   
+   .vitcminb-list li.alternate {
+    padding:18px;
+     background-color: #e5fddd; /* Alternate background color */
+   }
+   .vitcminb-list {
+    display: flex;
+    flex-direction: row;
+    padding:15px;
+    gap:1px;
+  }
+   /* Hover effect */
+   .vitamin-list li:hover {
+     background-color: #e8e4e4; /* Lighter background color on hover */
+   }
+   .vitc-title{
+       width: 50%;
+       padding-top: 40px;
+       height: 100%;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       font-size: 2rem;
+       font-weight: 700;
+       color: #000;
+       text-transform: uppercase;
+       letter-spacing: 2px;
+   }
+   .vitc-right li{
+       font-size:20px;
+   }
+   .vitc-intake-p{
+       font-size: 19px;
+   }
+   
+   .vitc-down {
+       display: flex;
+       justify-content: flex-start;
+       margin-left: 120px;
+       gap:30px;
+     }
+     
+     .vitc-down-content {
+       display: flex;
+       align-items: center;
+       gap:120px;
+     }
+     .vitc-down-h1:hover{
+       font-size: 40px;
+       font-family: 'Roboto', sans-serif;
+       font-style: italic;
+       column-rule-color: #000000;
+     }
+     
+     .imgc {
+       width:650px;
+       height: 420px;
+       margin-left: 15px;
+       border-radius: 15px;
+       padding-bottom: 5px;
+     }
+     
+   span {
+     content: "\2190";
+     border: #000;
+     border-width: 5px;
+   }
