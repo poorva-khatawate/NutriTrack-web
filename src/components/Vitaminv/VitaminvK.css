@@ -1,0 +1,61 @@
+.vitaminK-container-v {
+    font-family: sans-serif;
+}
+
+.vitaminK-inner-container-v {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.image_vitaminK-v {
+    width: 700px;
+    height: 450px;
+    /* object-fit: cover; */
+    margin-bottom: 40px;
+    border-radius: 10px;
+}
+
+.vitaminK-heading-v {
+    font-size: 50px;
+    font-weight: 700;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.vitaminK-information-v {
+    margin: 0 auto;
+    width: 75%;
+    /* text-align: center; */
+}
+
+.heading-vitaminK-v {
+    margin-bottom: 20px;
+}
+
+.vitaminK-deficiency-text-v{
+    font-size: 18px;
+    color: rgb(35, 31, 32);
+}
+
+.vitamin_list -v{
+    margin-left: 40px;
+}
+
+.vitamin_list-v li {
+    padding: 4px;
+}
+
+/* .image-container-vitaminK {
+    object-fit: cover;
+} */
+
+.image-container-vitaminK-middl-ve {
+    margin: 0 auto;
+    width: 75%;
+}
+
+.vitaminK-sources-text, .vitaminK-benefits-text-v {
+    font-size: 18px;
+}

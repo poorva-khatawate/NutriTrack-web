@@ -1,0 +1,58 @@
+.vitaminC-container-v {
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+.vitaminC-inner-container-v {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.image_vitaminC-v {
+    width: 700px;
+    height: 450px;
+    /* object-fit: cover; */
+    margin-bottom: 40px;
+    border-radius: 10px;
+}
+
+.vitaminC-heading-v {
+    font-size: 50px;
+    font-weight: 700;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.vitaminC-information-v {
+    margin: 0 auto;
+    width: 75%;
+    /* text-align: center; */
+}
+
+.heading-vitaminC-v {
+    margin-bottom: 20px;
+}
+
+.vitaminC-benefits-text-v {
+    font-size: 18px;
+    color: rgb(35, 31, 32);
+}
+
+.vitamin_list-v {
+    margin-left: 20px;
+}
+
+.vitamin_list-v li {
+    padding: 4px;
+}
+
+/* .image-container-vitaminC {
+    object-fit: cover;
+} */
+
+.image-container-vitaminC-middle-v {
+    margin: 0 auto;
+    width: 75%;
+}

@@ -1,14 +1,17 @@
 // components/LoginComponent.js
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import LoginForm from './LoginForm';
 
 function LoginComponent() {
   const [mode, setMode] = useState('login');
-
+  useEffect(() => {
+    // Scroll to the top of the page when component mounts
+    window.scrollTo(0, 0);
+  }, []);
   const toggleMode = () => {
     setMode(mode === 'login' ? 'signup' : 'login');
   };
-
+  
   return (
     <><div /><div className="container-login-main">
       <div className={`form-block-wrapper form-block-wrapper--is-${mode}`}>

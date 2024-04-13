@@ -1,8 +1,12 @@
 // components/LoginForm.js
-import React from 'react';
+import React,{useEffect} from 'react';
 import Input from './Input';
 import './login.css';
 function LoginForm({ mode }) {
+  useEffect(() => {
+    // Scroll to the top of the page when component mounts
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <form>
       <div className="form-block__input-wrapper">

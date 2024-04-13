@@ -16,7 +16,7 @@
 
 .vita-right{
     width: 50%;
-    height: 480px;
+    height: 410px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -28,21 +28,25 @@
 }
 .vita-title{
   font-weight: 500;
-  font-size: 70px;
+  font-size: 100px;
+
 }
 
-.vitamin-list {
+.vitamin-list-a {
   list-style-type: none;
-  padding: 0;
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 40px;
 }
 
-.vitamin-list li {
+.vitamin-list-a li {
   padding: 15px;
+  padding-bottom: 100px;
   border-bottom: 1px solid #9b9a9a; 
   background-color: #e2f6f7;/* Add a border between list items */
 }
 
-.vitamin-list li.alternate {
+.vitamin-list-a li.alternate {
   background-color: #f3dede; /* Alternate background color */
 }
 

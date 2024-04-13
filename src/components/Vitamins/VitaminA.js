@@ -2,6 +2,10 @@ import React, { Component } from 'react';
 import './VitaminA.css';
 import Table from 'react-bootstrap/Table';
 export default class VitaminA extends Component {
+  componentDidMount() {
+    // Scroll to the top of the page when component mounts
+    window.scrollTo(0, 0);
+  }
   render() {
     return (
       <>
@@ -10,7 +14,7 @@ export default class VitaminA extends Component {
             <img className='vita-img' src='https://www.healthifyme.com/blog/wp-content/uploads/2018/07/vitamin-a-feature-1024x683.jpeg' alt='vita' />
             <div className='vita-right'>
               <h1 className='vita-title'>Vitamin A</h1>
-              <ul className="vitamin-list">
+              <ul className="vitamin-list-a">
   <li>Fat-soluble vitamin crucial for vision, immune function, and cell growth.</li>
   <li className="alternate">Important for maintaining healthy skin, mucous membranes, and reproductive health.</li>
   <li>Found in foods like liver, dairy, eggs, and colorful fruits and vegetables.</li>

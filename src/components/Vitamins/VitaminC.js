@@ -3,6 +3,10 @@ import Table from 'react-bootstrap/Table';
 import React, { Component } from 'react';
 
 export default class VitaminC extends Component {
+  componentDidMount() {
+    // Scroll to the top of the page when component mounts
+    window.scrollTo(0, 0);
+  }
   render() {
     return (
       <>

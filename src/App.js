@@ -11,6 +11,15 @@ import VitaminD from './components/Vitamins/VitaminD';
 import VitaminK from './components/Vitamins/VitaminK';
 import VitaminE from './components/Vitamins/VitaminE';
 import LoginComponent from './components/Login/LoginComponent';
+import Footer from './components/Footer/Footer';
+import Vitaminv from './components/Vitaminv/Vitaminv';
+import VitaminvA from './components/Vitaminv/VitaminvA';
+import VitaminvB from './components/Vitaminv/VitaminvB';
+import VitaminvC from './components/Vitaminv/VitaminvC';
+import VitaminvD from './components/Vitaminv/VitaminvD';
+import VitaminvE from './components/Vitaminv/VitaminvE';
+import VitaminvK from './components/Vitaminv/VitaminvK';
+
 function App() {
   return (
     <Router>
@@ -26,11 +35,18 @@ function App() {
           <Route path="/vitaminD" element={<VitaminD/>} />
           <Route path='/vitaminK' element={<VitaminK/>} />
           <Route path='/vitaminE' element={<VitaminE/>} />
+          <Route path='/vitaminv' element={<Vitaminv/>} />
+          <Route path='/vitaminvA' element={<VitaminvA/>} />
+          <Route path='/vitaminvB' element={<VitaminvB/>} />
+          <Route path='/vitaminvC' element={<VitaminvC/>} />
+          <Route path='/vitaminvD' element={<VitaminvD/>} />
+          <Route path='/vitaminvE' element={<VitaminvE/>} />
+          <Route path='/vitaminvK' element={<VitaminvK/>} />
         </Routes>
+        <Footer />
       </div>
     </Router>
     
   );
 }
-
 export default App;

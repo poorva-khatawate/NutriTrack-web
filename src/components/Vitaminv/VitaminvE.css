@@ -1,0 +1,61 @@
+.vitaminE-container-v{
+    font-family: sans-serif;
+}
+
+.vitaminE-inner-container-v {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.image_vitaminE-v {
+    width: 700px;
+    height: 450px;
+    /* object-fit: cover; */
+    margin-bottom: 40px;
+    border-radius: 10px;
+}
+
+.vitaminE-heading-v {
+    font-size: 50px;
+    font-weight: 700;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.vitaminE-information-v {
+    margin: 0 auto;
+    width: 75%;
+    /* text-align: center; */
+}
+
+.heading-vitaminE-v {
+    margin-bottom: 20px;
+}
+
+.vitaminE-deficiency-text-v {
+    font-size: 18px;
+    color: rgb(35, 31, 32);
+}
+
+.vitamin_list-v {
+    margin-left: 40px;
+}
+
+.vitamin_list-v li {
+    padding: 4px;
+}
+
+/* .image-container-vitaminE {
+    object-fit: cover;
+} */
+
+.image-container-vitaminE-middle-v{
+    margin: 0 auto;
+    width: 75%;
+}
+
+.vitaminE-sources-text-v, .vitaminE-benefits-text-v {
+    font-size: 18px;
+}

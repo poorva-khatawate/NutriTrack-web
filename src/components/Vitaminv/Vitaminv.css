@@ -1,0 +1,63 @@
+.vitaminv-container{
+    margin-top: 40px;
+    font-family: sans-serif;
+}
+
+
+
+.heading-v{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    font-weight: 700;
+    font-size: 35px;
+}
+
+.header-text-v{
+    text-align: center;
+    width:75%;
+    padding-top: 20px;
+    margin: auto;
+    /* padding: 4px 60px; */
+    font-size: 16px;
+    color:rgb(108, 108, 112)
+    /* width:100px; */
+}
+
+.image_top-v{
+    border-radius: 10px;
+}
+
+.sub_title-v{
+    margin:30px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.sub_image-v{
+    width: 100%;
+    height: 240px;
+    border-radius: 5px;
+}
+
+.grid-container-v{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    padding: 60px 100px;
+    /* margin: 0 auto; */
+}
+
+.text-v{
+    font-size: 22px;
+    font-weight: 600;
+}
+.a-v{
+    text-decoration: none;
+    color: rgb(4, 15, 69);
+}
+.a-v:hover{
+    color: rgb(88, 97, 152);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.7);
+
+}

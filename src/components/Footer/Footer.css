@@ -1,0 +1,37 @@
+.footer-main{
+    /* position: absolute; */
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding:20px 200px;
+    background-color: #26263f;
+    color: white;
+}
+
+.flex-container-footer{
+    display:flex;
+    justify-content: space-between;
+}
+
+.flex-box-footer{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer1{
+    list-style: none;
+    cursor: pointer;
+}
+
+.footer1:hover{
+    color: blue;
+}
+
+.icons-footer{
+    cursor: pointer;
+    font-size: 20px;
+    display:flex;
+    justify-content: center;
+    gap:20px;
+}
