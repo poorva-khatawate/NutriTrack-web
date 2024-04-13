@@ -1,8 +1,15 @@
 
-button-login:hover{
-  background-color: orange;
+.button-login{
+  padding: 5px;
+  font-weight: 600;
+  text-transform: uppercase;
 }
-.container-login {
+
+.button-login:hover{
+  background-color: rgb(248, 189, 80);
+  padding:7px;
+}
+.container-login-main {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,10 +24,11 @@ button-login:hover{
   background-repeat: no-repeat;
 }
 
+
 .form-block-wrapper {
-  width: 400px;
+  width: 500px;
   font-weight: 500;
-  border: 1px solid #000000;
+  border: 2.5px solid #000000;
   border-radius: 5px;
   padding: 20px;
   backdrop-filter: blur(20px);
@@ -28,6 +36,8 @@ button-login:hover{
    /* Ensure the overlay is behind the content */
    text-align: center;
    font-family: cursive;
+   padding-top:30px;
+   padding-bottom:30px;
    
 }
 
@@ -39,21 +49,27 @@ button-login:hover{
 .form-block__toggle-block {
   margin-top: 20px;
 }
+.login-h1{
+  font-size:50px;
+}
 
 /* components/LoginForm.js */
 .form-group {
   margin-bottom: 20px;
 }
-
-/* App.css */
-.App {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+.input-login-sp{
+  padding:10px;
 }
-/* Add this to your CSS file */
 
+.form-group__input{
+  padding:5px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 7px;
+}
+
+.login-span{
+  font-size:50px;
+}
 /* Add this to your CSS file */
 #form-toggler {
   transform: scale(1.5); /* Adjust the scale factor as needed */

@@ -14,9 +14,9 @@ function LoginComponent() {
       <div className={`form-block-wrapper form-block-wrapper--is-${mode}`}>
         <section className={`form-block form-block--is-${mode}`}>
           <header className="form-block__header">
-            <h1 style={{ fontWeight: 'bold' }}>{mode === 'login' ? 'Welcome back!' : 'Sign up'}</h1>
+            <h1 className='login-h1' style={{ fontWeight: 'bold' }}>{mode === 'login' ? 'Welcome back!' : 'Sign up'}</h1>
             <div className="form-block__toggle-block">
-              <span style={{ fontSize: '19px' }}>{mode === 'login' ? "Don't" : 'Already'} have an account? Click here &#8594;  </span>
+              <span className='login-span' style={{ fontSize: '22px',fontFamily:600,color: 'black',fontWeight:'bolder'}}>{mode === 'login' ? "Don't" : 'Already'} have an account? Click here &#8594;  </span>
               <input id="form-toggler" type="checkbox" onClick={toggleMode} />
               <label htmlFor="form-toggler"></label>
             </div>
