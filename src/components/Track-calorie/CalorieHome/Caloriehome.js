@@ -5,8 +5,9 @@ import Fruits from './assets/fruits.jpg';
 import Breakfast from './assets/breakfast.jpg';
 import Junk from './assets/junk.jpeg';
 import Beverages from './assets/beverage.jpeg';
+import Dessert from './assets/dessert.jpg';
+import { Link } from 'react-router-dom';
 
-// import { Link } from 'react-router-dom';
 export default class Caloriehome extends Component {
   render() {
     return (
@@ -19,52 +20,63 @@ export default class Caloriehome extends Component {
                         <div className="row">
                             <div className="col-md-4 mb-4">
                                 <div className='card p-0 overflow-hidden h-100 shadow'>
+                                    <Link to="/vegetable">
                                     <img className="card-img-top" src={Vege} alt="vege" />
                                     <div className="card-body">
                                         <h3 className="card-title text-center">Vegetables</h3>
-                                    </div>
+                                    </div></Link>
                                 </div>
                             </div>
                             <div className="col-md-4 mb-4">
                                 <div className='card p-0 overflow-hidden h-100 shadow'>
+                                    <Link to="/breakfast">
                                     <img className="card-img-top" src={Breakfast} alt="Cbreak" />
                                     <div className="card-body">
                                         <h3 className="card-title text-center">Breakfast dishes</h3>
                                     </div>
+                                    </Link>
                                 </div>
                             </div>
                             <div className="col-md-4 mb-4">
                                 <div className='card p-0 overflow-hidden h-100 shadow'>
+                                    <Link to="/fruits">
                                     <img className="card-img-top" src={Fruits} alt="frui" />
                                     <div className="card-body">
                                         <h3 className="card-title text-center">Fruits</h3>
                                     </div>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
                         <div className="row">
                             <div className="col-md-4 mb-4">
                                 <div className='card p-0 overflow-hidden h-100 shadow'>
+                                    <Link to="/junk">
                                     <img className="card-img-top" src={Junk} alt="junk" />
                                     <div className="card-body">
                                         <h3 className="card-title text-center">Junk Foods</h3>
                                     </div>
+                                    </Link>
                                 </div>
                             </div>
                             <div className="col-md-4 mb-4">
                                 <div className='card p-0 overflow-hidden h-100 shadow'>
+                                    <Link to="/beverages">
                                     <img className="card-img-top" src={Beverages} alt="bev" />
                                     <div className="card-body">
                                         <h3 className="card-title text-center">Beverages</h3>
                                     </div>
+                                    </Link>
                                 </div>
                             </div>
                             <div className="col-md-4 mb-4">
                                 <div className='card p-0 overflow-hidden h-100 shadow'>
-                                    <img className="card-img-top" src={Vege} alt="abc" />
+                                    <Link to="/dessert">
+                                    <img className="card-img-top" src={Dessert} alt="abc"/>
                                     <div className="card-body">
-                                        <h3 className="card-title text-center">abc</h3>
+                                        <h3 className="card-title text-center">Desserts</h3>
                                     </div>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
