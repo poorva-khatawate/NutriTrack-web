@@ -2,8 +2,9 @@
 // components/LoginForm.js 
 import React, { useState } from 'react'; 
 import Input from './Input';
- import { useEffect } from 'react';
+
 import './login.css';
+import { useEffect } from 'react';
 
 function LoginForm({ mode }) { 
   useEffect(() => {

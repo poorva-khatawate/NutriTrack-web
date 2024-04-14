@@ -1,0 +1,20 @@
+.track-main{
+    display: flex;
+    gap: 30px;
+    justify-content: flex-end;
+    background-color: rgb(193, 215, 224);
+    font-size: 23px;
+    padding: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-right:50px;
+}
+.track-links{
+    color: #333;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-decoration: underline rgb(154, 166, 171);
+}
+.track-links:hover{
+    color: rgb(132, 66, 137);
+}

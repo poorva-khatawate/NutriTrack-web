@@ -20,6 +20,10 @@ import VitaminvD from './components/Vitaminv/VitaminvD';
 import VitaminvE from './components/Vitaminv/VitaminvE';
 import VitaminvK from './components/Vitaminv/VitaminvK';
 import Seacrh from './components/Search/Search';
+import Caloriehome from './components/Track-calorie/CalorieHome/Caloriehome';
+import Breakfast from './components/Track-calorie/Breakfast/Breakfast';
+import Beverages from './components/Track-calorie/Beverages/Beverages';
+import Dessert from './components/Track-calorie/Desserts/Dessert';
 function App() {
   return (
     <Router>
@@ -43,6 +47,10 @@ function App() {
           <Route path='/vitaminvE' element={<VitaminvE/>} />
           <Route path='/vitaminvK' element={<VitaminvK/>} />
           <Route path='/search' element={<Seacrh/>} />
+          <Route path='/caloriehome' element={<Caloriehome/>} />
+          <Route path='/breakfast' element={<Breakfast/>} />
+          <Route path='/beverages' element={<Beverages/>} />
+          <Route path='/dessert' element={<Dessert/>} />
         </Routes>
         <Footer />
       </div>
