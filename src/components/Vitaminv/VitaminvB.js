@@ -1,4 +1,5 @@
 import React,{useEffect} from "react";
+import { Link } from "react-router-dom";
 // import vitaminB_iconv from "./assests/images/vitaminB.webp";
 import vitaminB_icon1v from "./assests/images/VitaminBhead.jpg";
 import "./VitaminvB.css";
@@ -299,6 +300,10 @@ const VitaminvB = () => {
         </ul>
         <br />
         <br />
+      </div>
+      <div className="last-vitbv">
+       <h2>Know more about Vitamin B intake<span className="span-last-b">&#8594;</span></h2> 
+       <Link className="link-to-vitb" to="/vitaminB">Click Here</Link>
       </div>
     </div>
   );

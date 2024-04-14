@@ -19,7 +19,7 @@ import VitaminvC from './components/Vitaminv/VitaminvC';
 import VitaminvD from './components/Vitaminv/VitaminvD';
 import VitaminvE from './components/Vitaminv/VitaminvE';
 import VitaminvK from './components/Vitaminv/VitaminvK';
-
+import Seacrh from './components/Search/Search';
 function App() {
   return (
     <Router>
@@ -42,6 +42,7 @@ function App() {
           <Route path='/vitaminvD' element={<VitaminvD/>} />
           <Route path='/vitaminvE' element={<VitaminvE/>} />
           <Route path='/vitaminvK' element={<VitaminvK/>} />
+          <Route path='/search' element={<Seacrh/>} />
         </Routes>
         <Footer />
       </div>

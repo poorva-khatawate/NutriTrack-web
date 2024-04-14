@@ -59,3 +59,38 @@
 .vitaminK-sources-text, .vitaminK-benefits-text-v {
     font-size: 18px;
 }
+
+.last-vitkv{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    padding: 70px;
+}
+.last-vitkv h2{
+    font-size: 50px;
+}
+.link-to-vitk{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: rgb(25, 25, 72);
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    text-align: center;
+    padding-top:18px;
+}
+.link-to-vitk:hover{
+    background-color: rgb(177, 214, 182);
+    color: white;
+    border-radius: 14px;
+    color: black;
+    padding:15px;
+    padding-top:18px;
+    transition: all 0.3s ease;
+}
+.span-last-k{
+    padding-left: 4px;
+}

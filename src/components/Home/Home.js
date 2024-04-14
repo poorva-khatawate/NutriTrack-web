@@ -42,7 +42,10 @@ export default class Home extends Component {
         </>
   <div className='sq-box4'>
     <h1>Quick lookup<br></br>of food<br></br>nutritional values<span className='span-sq4'>&#8594;</span></h1>
-    <video className='video-search' src={Videoser} loop autoPlay muted></video>
+    <Link to='/search' className='btn-sq4'>
+      <video className='video-search' src={Videoser} loop autoPlay muted>
+        </video></Link>  
+    
   </div>
   <div className='sq-box5'>
     <video className='video-cart' src={Videocart} loop autoPlay muted></video>

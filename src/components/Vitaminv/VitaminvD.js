@@ -2,7 +2,7 @@ import React,{useEffect} from "react";
 import vitaminD_iconv from "./assests/images/vitamin-d.webp";
 import vitaminD_icon1v from "./assests/images/Vitamin-d-head.avif";
 import "./VitaminvD.css";
-
+import { Link } from "react-router-dom";
 const VitaminvD = () => {
   useEffect(() => {
     // Scroll to the top of the page when component mounts
@@ -78,6 +78,10 @@ const VitaminvD = () => {
           in regions with limited sunlight exposure or in individuals who have
           darker skin, are older, or are obese.
         </p>
+      </div>
+      <div className="last-vitdv">
+       <h2>Know more about Vitamin D intake<span className="span-last-d">&#8594;</span></h2> 
+       <Link className="link-to-vitd" to="/vitaminD">Click Here</Link>
       </div>
     </div>
   );

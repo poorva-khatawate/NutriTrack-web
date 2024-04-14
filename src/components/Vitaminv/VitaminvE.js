@@ -2,7 +2,7 @@ import React,{useEffect} from "react";
 import vitaminE_iconv from "./assests/images/vitaminE_inner.avif";
 import vitaminE_icon1v from "./assests/images/vitamin_e_head.webp";
 import "./VitaminvE.css";
-
+import { Link } from "react-router-dom";
 const VitaminvE = () => {
   useEffect(() => {
     // Scroll to the top of the page when component mounts
@@ -83,6 +83,10 @@ const VitaminvE = () => {
           It's important to include vitamin E-rich foods in your diet to ensure
           you're getting enough of this important nutrient.
         </p>
+      </div>
+      <div className="last-vitev">
+       <h2>Know more about Vitamin E intake<span className="span-last-e">&#8594;</span></h2> 
+       <Link className="link-to-vite" to="/vitaminE">Click Here</Link>
       </div>
     </div>
   );

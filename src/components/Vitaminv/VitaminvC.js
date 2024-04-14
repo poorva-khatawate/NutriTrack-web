@@ -2,7 +2,7 @@ import React,{useEffect} from "react";
 import vitaminC_iconv from "./assests/images/VitaminC.jpg";
 import vitaminC_icon1v from "./assests/images/VitaminC_head_cleanup.jpg";
 import "./VitaminvC.css";
-
+import { Link } from "react-router-dom";
 const VitaminvC = () => {
   useEffect(() => {
     // Scroll to the top of the page when component mounts
@@ -121,6 +121,10 @@ const VitaminvC = () => {
           heat, so it's best to consume vitamin C-rich foods raw or minimally
           cooked to retain their nutritional value.
         </p>
+      </div>
+      <div className="last-vitcv">
+       <h2>Know more about Vitamin C intake<span className="span-last-c">&#8594;</span></h2> 
+       <Link className="link-to-vitc" to="/vitaminC">Click Here</Link>
       </div>
     </div>
   );

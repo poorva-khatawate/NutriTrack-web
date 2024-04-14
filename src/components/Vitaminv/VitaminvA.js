@@ -1,6 +1,7 @@
 import React,{useEffect} from "react";
 import vitaminvA_iconv from "./assests/images/vitaminA.webp";
 import vitaminvA_icon1v from "./assests/images/VitaminA_head.jpg";
+import { Link } from "react-router-dom";
 import "./VitaminvA.css";
 const VitaminvA = () => {
   useEffect(() => {
@@ -119,6 +120,10 @@ const VitaminvA = () => {
           — are more at risk of vitamin A deficiency <br />
           <br />
         </p>
+      </div>
+      <div className="last-vitav">
+       <h2>Know more about Vitamin A intake<span className="span-last-a">&#8594;</span></h2> 
+       <Link className="link-to-vita" to="/vitaminA">Click Here</Link>
       </div>
     </div>
   );

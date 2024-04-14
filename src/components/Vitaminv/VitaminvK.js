@@ -2,7 +2,7 @@ import React,{useEffect} from "react";
 import vitaminK_iconv from './assests/images/VitaminK_inner.webp'
 import vitaminK_icon1v from "./assests/images/VitaminK_head.jpg";
 import "./VitaminvK.css";
-
+import { Link } from "react-router-dom";
 const VitaminvK = () => {
   useEffect(() => {
     // Scroll to the top of the page when component mounts
@@ -74,6 +74,10 @@ const VitaminvK = () => {
           Including vitamin K-rich foods in your diet can help ensure you're
           getting enough of this important nutrient.
         </p>
+      </div>
+      <div className="last-vitkv">
+       <h2>Know more about Vitamin K intake<span className="span-last-k">&#8594;</span></h2> 
+       <Link className="link-to-vitk" to="/vitaminK">Click Here</Link>
       </div>
     </div>
   );

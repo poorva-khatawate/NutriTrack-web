@@ -44,6 +44,7 @@ margin-top: 2vw;
 .btn-login:hover{
     background-color: #FFD700;
     color: #000000;
+    transition: all 0.3s ease;
     
 }
 span {
@@ -89,6 +90,7 @@ span {
 .vitamin-links:hover{
     color: #DAA521;
     font-size: 43px;
+    transition: all 0.3s ease;
 }
 .sq-box3 h2{
     font-size: 50px;
@@ -154,14 +156,19 @@ span {
     font-size:150px;
 }
 .video-search {
-    /* width: 900px; */
-    width:50%;
+    width: 900px;
+    /* width:50%; */
     height: 500px;
     border-radius: 50%;
     object-fit: cover; /* Ensure the video covers the entire container */
     object-position: center; /* Center the video within its container */
      /* background: radial-gradient(closest-side, #93b8dc, rgb(172, 198, 223), #e7eff1);  */
     background-color: #9f6060;  
+    margin-right:10px;
+}
+.video-search:hover{
+    box-shadow: 20px 20px 20px rgba(121, 159, 199, 0.4);
+
 }
 .sq-box5{
     display:flex;
