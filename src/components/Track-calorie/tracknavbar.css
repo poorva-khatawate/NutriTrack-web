@@ -18,3 +18,6 @@
 .track-links:hover{
     color: rgb(132, 66, 137);
 }
+.cart-link{
+    align-items: flex-start;
+}

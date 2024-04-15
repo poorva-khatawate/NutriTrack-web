@@ -24,6 +24,12 @@ import Caloriehome from './components/Track-calorie/CalorieHome/Caloriehome';
 import Breakfast from './components/Track-calorie/Breakfast/Breakfast';
 import Beverages from './components/Track-calorie/Beverages/Beverages';
 import Dessert from './components/Track-calorie/Desserts/Dessert';
+import JunkFood from './components/Track-calorie/JunkFood/JunkFoods';
+import Fruits from './components/Track-calorie/FruVege/Fruits';
+import Vegetables from './components/Track-calorie/FruVege/Vegetables';
+import Cart from './components/Track-calorie/Cart';
+import Nutritionist from './components/Nutritionist/Nutritionist';
+import { CartProvider } from 'react-use-cart';
 function App() {
   return (
     <Router>
@@ -51,10 +57,16 @@ function App() {
           <Route path='/breakfast' element={<Breakfast/>} />
           <Route path='/beverages' element={<Beverages/>} />
           <Route path='/dessert' element={<Dessert/>} />
+          <Route path='/junkfood' element={<JunkFood/>} />
+          <Route path='/fruits' element={<Fruits/>} />
+          <Route path='/vegetables' element={<Vegetables/>} />
+          <Route path='/nutritionist' element={<Nutritionist/>} />
+          <Route path='/cart' element={<CartProvider> <Cart/></CartProvider>} />
         </Routes>
         <Footer />
       </div>
     </Router>
+
     
   );
 }

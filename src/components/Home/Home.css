@@ -69,6 +69,7 @@ span {
     margin-top: 120px;
     padding-left: 100px;
     gap: 15px;
+    
 }
 .vitamin-list{
     display: flex;
@@ -134,7 +135,7 @@ span {
 }
 
 .sq-box4{
-    padding-bottom: 200px;
+    padding-bottom: 100px;
     /* padding-left:50px; */
     padding-top: 100px;
     display: flex;
@@ -171,73 +172,45 @@ span {
 
 }
 .sq-box5{
-    display:flex;
-    align-items: center;
-    padding:0px 0px 150px 0px;
-    gap:200px;
-}
-.video-cart{
-    width:40%;
-    height:600px;
-    padding-left:9px;
-    object-fit: cover;
-    object-position: center;
-    border-radius: 10px;
-    box-shadow: 20px 30px 20px rgba(69, 111, 155, 0.4);
-}
-.s15-inner{
-    width:60%;
-}
-.tracking{
     display: flex;
+    flex-direction: row;
+    gap:120px;
+    padding-left: 250px;
+    padding-bottom: 60px;
 }
-.h1-track{
+.sq-box5 h1{
     font-size: 60px;
-    font-weight: 600;
 }
-.dropdown {
-    position: relative;
-    margin-left: 10px; /* Adjust margin as needed */
-    padding-top:9px;
-    font-size: 25px;
-  }
-  
-  .dropdown-text {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #fff;
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  .dropdown:hover .dropdown-text {
-    display: block;
-    padding: 30px 30px;
-    width:280px;
-    height:auto;
-    font-size: 22px;
-    background-color: #e8efee;
-    border: 1.5px solid rgb(197, 172, 172);
-  }
-  
-  .dropdown-arrow {
-    cursor: pointer;
-  }
-  
-  /* Rotate arrow on hover */
-  .dropdown:hover .dropdown-arrow {
-    transform: rotate(180deg);
-    transition: transform 0.3s ease;
-  }
-  .btn-track{
-    padding: 10px;
-    margin-top: 40px;
-    background-color: #2d3854;
-    color: #f9f9f9;
-    font-size: 22px;
-    margin-left:180px;
+.inner-sq5{
+    padding:50px;
+    padding-bottom: 80px;
+    padding-top:80px;
+    border: 1px dotted rgb(142, 108, 108);
+    transition: border-color 0.3s ease;
     border-radius: 10px;
-  }
+    /* border: 1px dotted rgb(142, 108, 108); */
+    box-shadow: 5px 5px 5px rgba(168, 117, 117, 0.4);
+}
+
+
+/* Define animation for border color change */
+@keyframes borderAnimation {
+  0% { border-color: rgb(142, 108, 108); }
+  50% { border-color: rgb(255, 0, 0); }
+  100% { border-color: rgb(142, 108, 108); }
+}
+
+/* Apply animation to the border */
+.animated-border {
+  animation: borderAnimation 2s infinite;
+}
+.inner-sq5:hover{
+    background-color: #e8e3ef;
+    box-shadow: 5px 5px 5px rgba(192, 95, 225, 0.4);
+
+}
+.link-sq5{
+    text-decoration: none;
+    color: #2d3854;
+}
+

@@ -1,0 +1,31 @@
+.cal-h1-track{
+    font-size: 55px;
+    padding-top: 25px;
+    color: rgb(56, 30, 82);
+    font-weight: 600;
+    margin: 0 auto;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+.common-cal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+
+}
+.view-cart-link{
+    text-decoration: none;
+    padding: 10px;
+    font-size: 55px;
+    color: rgb(56, 30, 82);
+    font-weight: 600;
+    margin: 0 auto;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+.view-cart-link span{
+    padding-left: 15px;
+    font-size: 65px;
+}
+.view-cart-link:hover{
+    color: rgb(75, 60, 40);
+}

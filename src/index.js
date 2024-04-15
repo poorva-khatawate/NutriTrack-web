@@ -4,12 +4,12 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
-// import Calories from './components/Track-calorie/Calories';
-// import Caloriehome from './components/Track-calorie/CalorieHome/Caloriehome';
+// import Junkfood from './components/Track-calorie/JunkFood/JunkFoods';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App/>
+    <App />
+    
   </React.StrictMode>
 );
 

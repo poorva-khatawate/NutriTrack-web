@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import './Home.css';
 import { Link } from 'react-router-dom';
 import Videoser from './Video/searchele.mp4';
-import Videocart from './Video/cart.mp4';
 export default class Home extends Component {
   componentDidMount() {
     // Scroll to the top of the page when component mounts
@@ -47,18 +46,19 @@ export default class Home extends Component {
         </video></Link>  
     
   </div>
-  <div className='sq-box5'>
-    <video className='video-cart' src={Videocart} loop autoPlay muted></video>
-    <div className='sq5-inner'>
-    <div className='tracking'>
-    <h1 className='h1-track'>Track your calories</h1>
-    <div className="dropdown">
-    <span className="dropdown-arrow">▼</span>
-    <span className="dropdown-text">Track your calories by selecting particular food items</span></div>
-    </div>
-    <button className="btn-track">Track now</button>
-  </div>
-  </div>
+    <div className='sq-box5'>
+      <Link className='link-sq5' to="/nutritionist">
+      <div className='inner-sq5'>
+      <h1>
+        Finding <br></br>a Nutritionist<span>&#8594;</span>
+      </h1>
+      </div></Link>
+      <Link className='link-sq5' to="/CalorieHome">
+      <div className='inner-sq5'>
+      <h1>Track <br></br>your Calories<span>&#8594;</span></h1>
+      </div>
+      </Link>
+    </div> 
   </div>
       </>
       </>
