@@ -3,13 +3,14 @@ import vitaminvA_iconv from "./assests/images/vitaminA.webp";
 import vitaminvA_icon1v from "./assests/images/VitaminA_head.jpg";
 import { Link } from "react-router-dom";
 import "./VitaminvA.css";
+import Navbar from "../Navbar/Navbar";
 const VitaminvA = () => {
   useEffect(() => {
     // Scroll to the top of the page when component mounts
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div className="vitaminA-container-v">
+    <><Navbar /><div className="vitaminA-container-v">
       <div className="vitaminA-inner-container-v">
         <p className="vitaminA-heading-v">Vitamin A Deficiency</p>
         <div className="image-container-vitaminA-v">
@@ -122,10 +123,10 @@ const VitaminvA = () => {
         </p>
       </div>
       <div className="last-vitav">
-       <h2>Know more about Vitamin A intake<span className="span-last-a">&#8594;</span></h2> 
-       <Link className="link-to-vita" to="/vitaminA">Click Here</Link>
+        <h2>Know more about Vitamin A intake<span className="span-last-a">&#8594;</span></h2>
+        <Link className="link-to-vita" to="/vitaminA">Click Here</Link>
       </div>
-    </div>
+    </div></>
   );
 };
 

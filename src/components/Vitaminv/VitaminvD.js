@@ -3,13 +3,15 @@ import vitaminD_iconv from "./assests/images/vitamin-d.webp";
 import vitaminD_icon1v from "./assests/images/Vitamin-d-head.avif";
 import "./VitaminvD.css";
 import { Link } from "react-router-dom";
+import Navbar from "../Navbar/Navbar";
 const VitaminvD = () => {
   useEffect(() => {
     // Scroll to the top of the page when component mounts
     window.scrollTo(0, 0);
   }, []);
+ 
   return (
-    <div className="vitaminD-container-v">
+    <><Navbar /><div className="vitaminD-container-v">
       <div className="vitaminD-inner-container-v">
         <p className="vitaminD-heading-v">Vitamin D </p>
         <div className="image-container-vitaminD-v">
@@ -35,8 +37,8 @@ const VitaminvD = () => {
           to a loss of bone density, increasing the risk of fractures, especially
           in older adults.
         </p>
-        <br/>
-        <br/>
+        <br />
+        <br />
         <h1 className="heading-vitaminD-v">Benefits</h1>
         <p className="vitaminD-benefits-text-v">
           Vitamin D, often referred to as the "sunshine vitamin," plays a
@@ -80,10 +82,10 @@ const VitaminvD = () => {
         </p>
       </div>
       <div className="last-vitdv">
-       <h2>Know more about Vitamin D intake<span className="span-last-d">&#8594;</span></h2> 
-       <Link className="link-to-vitd" to="/vitaminD">Click Here</Link>
+        <h2>Know more about Vitamin D intake<span className="span-last-d">&#8594;</span></h2>
+        <Link className="link-to-vitd" to="/vitaminD">Click Here</Link>
       </div>
-    </div>
+    </div></>
   );
 };
 

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './BmiCalculator.css'; 
+import Navbar from '../Navbar/Navbar';
 import axios from 'axios';
 
 function BmiCalculator() {
@@ -52,30 +53,30 @@ function BmiCalculator() {
     };
 
     return (
-        <><div className='bmi-main'>
-        <div className='container-bmi'>
-            <h1 className='title-bmi'>BMI Calculator</h1>
-            <form className='form-bmi' onSubmit={calculateBMI}>
-                <input className="input-bmi" type="number" placeholder="Weight in kg" value={weight} onChange={e => setWeight(e.target.value)} />
-                <input className="input-bmi" type="number" placeholder="Height in cm" value={height} onChange={e => setHeight(e.target.value)} />
-                <button className="button-bmi" type="submit">Calculate BMI</button>
-            </form>
-            {bmi && <p className="result-bmi">Your BMI is: {bmi}</p>}
-            {status && <p className="status-bmi">Your weight status is: {status}</p>}
-            {status && <h2 className="subtitle-bmi">Food Recommendations:</h2>}
-            <div className="recommendations-bmi">
-                {recommendations.map(recipe => (
-                    <div key={recipe.id} className="recipe-bmi">
-                        <img src={recipe.image} alt={recipe.title} />
-                        <div className="recipe-info-bmi">
-                            <p className="recipe-titl-bmi">{recipe.title}</p>
-                            <a className="recipe-link-bmi" href={recipe.link} target="_blank" rel="noopener noreferrer">View Recipe</a>
+        <><Navbar /><><div className='bmi-main'>
+            <div className='container-bmi'>
+                <h1 className='title-bmi'>BMI Calculator</h1>
+                <form className='form-bmi' onSubmit={calculateBMI}>
+                    <input className="input-bmi" type="number" placeholder="Weight in kg" value={weight} onChange={e => setWeight(e.target.value)} />
+                    <input className="input-bmi" type="number" placeholder="Height in cm" value={height} onChange={e => setHeight(e.target.value)} />
+                    <button className="button-bmi" type="submit">Calculate BMI</button>
+                </form>
+                {bmi && <p className="result-bmi">Your BMI is: {bmi}</p>}
+                {status && <p className="status-bmi">Your weight status is: {status}</p>}
+                {status && <h2 className="subtitle-bmi">Food Recommendations:</h2>}
+                <div className="recommendations-bmi">
+                    {recommendations.map(recipe => (
+                        <div key={recipe.id} className="recipe-bmi">
+                            <img src={recipe.image} alt={recipe.title} />
+                            <div className="recipe-info-bmi">
+                                <p className="recipe-titl-bmi">{recipe.title}</p>
+                                <a className="recipe-link-bmi" href={recipe.link} target="_blank" rel="noopener noreferrer">View Recipe</a>
+                            </div>
                         </div>
-                    </div>
-                ))}
+                    ))}
+                </div>
             </div>
-        </div>
-        </div></>
+        </div></></>
     );
 }
 

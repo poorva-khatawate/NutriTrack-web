@@ -1,9 +1,9 @@
 import './App.css';
 import React from 'react';
-import Navbar from './components/Navbar/Navbar';
+// import Navbar from './components/Navbar/Navbar';
 import Home from './components/Home/Home';
 import About from './components/About/About';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Outlet } from 'react-router-dom';
 import VitaminA from './components/Vitamins/VitaminA';
 import VitaminB from './components/Vitamins/VitaminB';
 import VitaminC from './components/Vitamins/VitaminC';
@@ -31,13 +31,16 @@ import Cart from './components/Track-calorie/Cart';
 import Nutritionist from './components/Nutritionist/Nutritionist';
 import { CartProvider } from 'react-use-cart';
 import BmiCalculator from './components/BMI/BmiCalculator';
+import LoginBase from './components/LoginNew/LoginBase';
+
+
+
 function App() {
   return (
     <Router>
       <div className="App">
-        <Navbar />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/home" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/login" element={<LoginComponent />} />
           <Route path="/vitaminA" element={<VitaminA/>} />
@@ -64,6 +67,7 @@ function App() {
           <Route path='/nutritionist' element={<Nutritionist/>} />
           <Route path='/cart' element={<CartProvider> <Cart/></CartProvider>} />
           <Route path='/bmi' element={<BmiCalculator/>}/>
+          <Route path='/' element={<LoginBase/>} />
         </Routes>
         <Footer />
       </div>

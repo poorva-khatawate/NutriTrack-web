@@ -1,7 +1,7 @@
 import React from 'react';
 import { useCart } from 'react-use-cart';
 import { toast } from 'react-hot-toast';
-
+import Navbar from '../Navbar/Navbar';
 const Cart = () => {
     const {
         isEmpty,
@@ -30,7 +30,7 @@ const Cart = () => {
     if (isEmpty) return <h1 className="text-center">Cart is Empty</h1>;
 
     return (
-        <section className="py-4 container">
+        <><Navbar /><section className="py-4 container">
             <div className="row justify-content-center">
                 <div className="col-12">
                     <h5>Cart ({totalUniqueItems}) Total items: ({totalItems})</h5>
@@ -63,7 +63,7 @@ const Cart = () => {
                     <button className="btn btn-danger" onClick={() => emptyCart()}>Clear Cart</button>
                 </div>
             </div>
-        </section>
+        </section></>
     );
 };
 

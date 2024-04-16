@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import './Home.css';
 import { Link } from 'react-router-dom';
 import Videoser from './Video/searchele.mp4';
+import Navbar from '../Navbar/Navbar';
+// import { NavDropdown } from 'react-bootstrap';
 export default class Home extends Component {
   componentDidMount() {
     // Scroll to the top of the page when component mounts
@@ -9,7 +11,7 @@ export default class Home extends Component {
   }
   render() {
     return (
-      <><><div className='sq-main'>
+      <><Navbar /><><><div className='sq-main'>
         <><div className='sq-box1'>
           <div className='box1-inner'>
             <h1 className='be-h'>Be healthy</h1>
@@ -40,32 +42,32 @@ export default class Home extends Component {
           </div>
         </>
         <div className='sq-box6'>
-        <h2>Get food recommendations <br></br>using BMI Calculator <span>&#8594;</span> </h2>
-            <Link className='inner-link-v6' to="/bmi">Know more</Link>
+          <h2>Get food recommendations <br></br>using BMI Calculator <span>&#8594;</span> </h2>
+          <Link className='inner-link-v6' to="/bmi">Know more</Link>
         </div>
-  <div className='sq-box4'>
-    <h1>Quick lookup<br></br>of food<br></br>nutritional values<span className='span-sq4'>&#8594;</span></h1>
-    <Link to='/search' className='btn-sq4'>
-      <video className='video-search' src={Videoser} loop autoPlay muted>
-        </video></Link>  
-    
-  </div>
-    <div className='sq-box5'>
-      <Link className='link-sq5' to="/nutritionist">
-      <div className='inner-sq5'>
-      <h1>
-        Finding <br></br>a Nutritionist<span>&#8594;</span>
-      </h1>
-      </div></Link>
-      <Link className='link-sq5' to="/CalorieHome">
-      <div className='inner-sq5'>
-      <h1>Track <br></br>your Calories<span>&#8594;</span></h1>
+        <div className='sq-box4'>
+          <h1>Quick lookup<br></br>of food<br></br>nutritional values<span className='span-sq4'>&#8594;</span></h1>
+          <Link to='/search' className='btn-sq4'>
+            <video className='video-search' src={Videoser} loop autoPlay muted>
+            </video></Link>
+
+        </div>
+        <div className='sq-box5'>
+          <Link className='link-sq5' to="/nutritionist">
+            <div className='inner-sq5'>
+              <h1>
+                Finding <br></br>a Nutritionist<span>&#8594;</span>
+              </h1>
+            </div></Link>
+          <Link className='link-sq5' to="/CalorieHome">
+            <div className='inner-sq5'>
+              <h1>Track <br></br>your Calories<span>&#8594;</span></h1>
+            </div>
+          </Link>
+        </div>
       </div>
-      </Link>
-    </div> 
-  </div>
       </>
-      </>
+      </></>
     )
   }
 }

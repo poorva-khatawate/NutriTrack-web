@@ -4,6 +4,7 @@ import './Search.css'
 import { useState } from "react";
 import { useEffect } from "react";
 import { FaSearch } from 'react-icons/fa';
+import Navbar from "../Navbar/Navbar";
 
 function Search() {
   const [query, setQuery] = useState('');
@@ -101,18 +102,16 @@ function Search() {
 
 
   return (
-    
-    <div className="search-container">
-    <h1 class="page-heading">Food Nutritional Values At A Glance</h1>
+    <><Navbar /><div className="search-container">
+      <h1 class="page-heading">Food Nutritional Values At A Glance</h1>
       <div className="search-form">
         <input
           className="search-input"
           type="text"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-          placeholder="Enter food item"
-        />
-        <button className="search-button" onClick={handleSearch} disabled={loading} >
+          placeholder="Enter food item" />
+        <button className="search-button" onClick={handleSearch} disabled={loading}>
           {loading ? (<Spinner />) : <FaSearch />}</button>
       </div>
       <br />
@@ -171,18 +170,17 @@ function Search() {
                     <p>Fiber : {nutritionInfo.fiber}</p>
                     <p>Calcium : {nutritionInfo.calcium}</p>
                     <p>Iron : {nutritionInfo.iron}</p>
-                    <p>Vitamin A : {nutritionInfo.vitaminA}</p> 
+                    <p>Vitamin A : {nutritionInfo.vitaminA}</p>
                     <p>Vitamin C : {nutritionInfo.vitaminC}</p>
                     <p>Cholesterol : {nutritionInfo.cholesterol}</p> */}
 
 
           </table>
         </div>
-      )
-      }
+      )}
 
 
-    </div >
+    </div></>
   )
 }
 

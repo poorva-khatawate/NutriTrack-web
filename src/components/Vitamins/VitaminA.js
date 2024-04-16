@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './VitaminA.css';
 import Table from 'react-bootstrap/Table';
+import Navbar from '../Navbar/Navbar';
 export default class VitaminA extends Component {
   componentDidMount() {
     // Scroll to the top of the page when component mounts
@@ -8,18 +9,18 @@ export default class VitaminA extends Component {
   }
   render() {
     return (
-      <>
+      <><Navbar /><>
         <div className='vita'>
           <div className='vita-main'>
             <img className='vita-img' src='https://www.healthifyme.com/blog/wp-content/uploads/2018/07/vitamin-a-feature-1024x683.jpeg' alt='vita' />
             <div className='vita-right'>
               <h1 className='vita-title'>Vitamin A</h1>
               <ul className="vitamin-list-a">
-  <li>Fat-soluble vitamin crucial for vision, immune function, and cell growth.</li>
-  <li className="alternate">Important for maintaining healthy skin, mucous membranes, and reproductive health.</li>
-  <li>Found in foods like liver, dairy, eggs, and colorful fruits and vegetables.</li>
-  <li className="alternate">Excessive intake can lead to toxicity, causing nausea, dizziness, and even liver damage.</li>
-</ul>
+                <li>Fat-soluble vitamin crucial for vision, immune function, and cell growth.</li>
+                <li className="alternate">Important for maintaining healthy skin, mucous membranes, and reproductive health.</li>
+                <li>Found in foods like liver, dairy, eggs, and colorful fruits and vegetables.</li>
+                <li className="alternate">Excessive intake can lead to toxicity, causing nausea, dizziness, and even liver damage.</li>
+              </ul>
 
             </div>
           </div>
@@ -46,63 +47,63 @@ export default class VitaminA extends Component {
               </tr>
             </thead>
             <tbody>
-            <tr>
-              <td>Birth to 6 months*</td>
-              <td>400 mcg RAE</td>
-              <td>400 mcg RAE</td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>7–12 months*</td>
-              <td>500 mcg RAE</td>
-              <td>500 mcg RAE</td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>1–3 years</td>
-              <td>300 mcg RAE</td>
-              <td>300 mcg RAE</td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>4–8 years</td>
-              <td>400 mcg RAE</td>
-              <td>400 mcg RAE</td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>9–13 years</td>
-              <td>600 mcg RAE</td>
-              <td>600 mcg RAE</td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>14–18 years</td>
-              <td>900 mcg RAE</td>
-              <td>700 mcg RAE</td>
-              <td>750 mcg RAE</td>
-              <td>1,200 mcg RAE</td>
-            </tr>
-            <tr>
-              <td>19–50 years</td>
-              <td>900 mcg RAE</td>
-              <td>700 mcg RAE</td>
-              <td>770 mcg RAE</td>
-              <td>1,300 mcg RAE</td>
-            </tr>
-            <tr>
-              <td>51+ years</td>
-              <td>900 mcg RAE</td>
-              <td>700 mcg RAE</td>
-              <td></td>
-              <td></td>
-            </tr>
-          
+              <tr>
+                <td>Birth to 6 months*</td>
+                <td>400 mcg RAE</td>
+                <td>400 mcg RAE</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>7–12 months*</td>
+                <td>500 mcg RAE</td>
+                <td>500 mcg RAE</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>1–3 years</td>
+                <td>300 mcg RAE</td>
+                <td>300 mcg RAE</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>4–8 years</td>
+                <td>400 mcg RAE</td>
+                <td>400 mcg RAE</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>9–13 years</td>
+                <td>600 mcg RAE</td>
+                <td>600 mcg RAE</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>14–18 years</td>
+                <td>900 mcg RAE</td>
+                <td>700 mcg RAE</td>
+                <td>750 mcg RAE</td>
+                <td>1,200 mcg RAE</td>
+              </tr>
+              <tr>
+                <td>19–50 years</td>
+                <td>900 mcg RAE</td>
+                <td>700 mcg RAE</td>
+                <td>770 mcg RAE</td>
+                <td>1,300 mcg RAE</td>
+              </tr>
+              <tr>
+                <td>51+ years</td>
+                <td>900 mcg RAE</td>
+                <td>700 mcg RAE</td>
+                <td></td>
+                <td></td>
+              </tr>
+
             </tbody>
           </Table>
           <br />
@@ -116,149 +117,149 @@ export default class VitaminA extends Component {
           </p>
           <div className='vita-src'>
             <h2>Sources of Vitamin A</h2>
-            <p className='vita-intake-p'>Table 2 lists a variety of foods and their vitamin A 
-              content per serving. The foods from animal 
-              sources in Table 2 contain primarily preformed 
-              vitamin A, the plant-based foods have provitamin A, and the foods 
+            <p className='vita-intake-p'>Table 2 lists a variety of foods and their vitamin A
+              content per serving. The foods from animal
+              sources in Table 2 contain primarily preformed
+              vitamin A, the plant-based foods have provitamin A, and the foods
               with a mixture of ingredients from animals and plants contain both preformed vitamin A and provitamin A.
             </p>
-      <Table striped>
-      <caption>Vitamin A Content of Selected Foods</caption>
-      <thead>
-        <tr>
-          <th>Food</th>
-          <th>microgram (mcg) RAE per serving</th>
-          <th>Percent DV*</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Beef liver, pan fried, 3 ounces</td>
-          <td>6,582</td>
-          <td>731</td>
-        </tr>
-        <tr>
-          <td>Sweet potato, baked in skin, 1 whole</td>
-          <td>1,403</td>
-          <td>156</td>
-        </tr>
-        <tr>
-          <td>Spinach, frozen, boiled, ½ cup</td>
-          <td>573</td>
-          <td>64</td>
-        </tr>
-        <tr>
-          <td>Pumpkin pie, commercially prepared, 1 piece</td>
-          <td>488</td>
-          <td>54</td>
-        </tr>
-        <tr>
-          <td>Carrots, raw, ½ cup</td>
-          <td>459</td>
-          <td>51</td>
-        </tr>
-        <tr>
-          <td>Herring, Atlantic, pickled, 3 ounces</td>
-          <td>219</td>
-          <td>24</td>
-        </tr>
-        <tr>
-          <td>Ice cream, French vanilla, soft serve, ⅔ cup</td>
-          <td>185</td>
-          <td>21</td>
-        </tr>
-        <tr>
-          <td>Milk, skim, with added vitamin A and vitamin D, 1 cup</td>
-          <td>149</td>
-          <td>17</td>
-        </tr>
-        <tr>
-          <td>Cantaloupe, raw, ½ cup</td>
-          <td>135</td>
-          <td>15</td>
-        </tr>
-        <tr>
-          <td>Cheese, ricotta, part skim, ½ cup</td>
-          <td>133</td>
-          <td>15</td>
-        </tr>
-        <tr>
-          <td>Peppers, sweet, red, raw, ½ cup</td>
-          <td>117</td>
-          <td>13</td>
-        </tr>
-        <tr>
-          <td>Mangos, raw, 1 whole</td>
-          <td>112</td>
-          <td>12</td>
-        </tr>
-        <tr>
-          <td>Breakfast cereals, fortified with 10% of the DV for vitamin A, 1 serving</td>
-          <td>90</td>
-          <td>10</td>
-        </tr>
-        <tr>
-          <td>Egg, hard boiled, 1 large</td>
-          <td>75</td>
-          <td>8</td>
-        </tr>
-        <tr>
-          <td>Black-eyed peas (cowpeas), boiled, 1 cup</td>
-          <td>66</td>
-          <td>7</td>
-        </tr>
-        <tr>
-          <td>Apricots, dried, sulfured, 5 apricots</td>
-          <td>63</td>
-          <td>7</td>
-        </tr>
-        <tr>
-          <td>Broccoli, boiled, ½ cup</td>
-          <td>60</td>
-          <td>7</td>
-        </tr>
-        <tr>
-          <td>Salmon, sockeye, cooked, 3 ounces</td>
-          <td>59</td>
-          <td>7</td>
-        </tr>
-        <tr>
-          <td>Tomato juice, canned, ¾ cup</td>
-          <td>42</td>
-          <td>5</td>
-        </tr>
-        <tr>
-          <td>Yogurt, plain, low fat, 1 cup</td>
-          <td>32</td>
-          <td>4</td>
-        </tr>
-        <tr>
-          <td>Tuna, light, canned in oil, drained, 3 ounces</td>
-          <td>20</td>
-          <td>2</td>
-        </tr>
-        <tr>
-          <td>Baked beans, canned, plain or vegetarian, 1 cup</td>
-          <td>13</td>
-          <td>1</td>
-        </tr>
-        <tr>
-          <td>Summer squash, all varieties, boiled, ½ cup</td>
-          <td>10</td>
-          <td>1</td>
-        </tr>
-        <tr>
-          <td>Chicken, breast meat and skin, roasted, ½ breast</td>
-          <td>5</td>
-          <td>1</td>
-        </tr>
-        <tr>
-          <td>Pistachio nuts, dry roasted, 1 ounce</td>
-          <td>4</td>
-          <td>0</td>
-        </tr>
-      </tbody>
-    </Table>
+            <Table striped>
+              <caption>Vitamin A Content of Selected Foods</caption>
+              <thead>
+                <tr>
+                  <th>Food</th>
+                  <th>microgram (mcg) RAE per serving</th>
+                  <th>Percent DV*</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Beef liver, pan fried, 3 ounces</td>
+                  <td>6,582</td>
+                  <td>731</td>
+                </tr>
+                <tr>
+                  <td>Sweet potato, baked in skin, 1 whole</td>
+                  <td>1,403</td>
+                  <td>156</td>
+                </tr>
+                <tr>
+                  <td>Spinach, frozen, boiled, ½ cup</td>
+                  <td>573</td>
+                  <td>64</td>
+                </tr>
+                <tr>
+                  <td>Pumpkin pie, commercially prepared, 1 piece</td>
+                  <td>488</td>
+                  <td>54</td>
+                </tr>
+                <tr>
+                  <td>Carrots, raw, ½ cup</td>
+                  <td>459</td>
+                  <td>51</td>
+                </tr>
+                <tr>
+                  <td>Herring, Atlantic, pickled, 3 ounces</td>
+                  <td>219</td>
+                  <td>24</td>
+                </tr>
+                <tr>
+                  <td>Ice cream, French vanilla, soft serve, ⅔ cup</td>
+                  <td>185</td>
+                  <td>21</td>
+                </tr>
+                <tr>
+                  <td>Milk, skim, with added vitamin A and vitamin D, 1 cup</td>
+                  <td>149</td>
+                  <td>17</td>
+                </tr>
+                <tr>
+                  <td>Cantaloupe, raw, ½ cup</td>
+                  <td>135</td>
+                  <td>15</td>
+                </tr>
+                <tr>
+                  <td>Cheese, ricotta, part skim, ½ cup</td>
+                  <td>133</td>
+                  <td>15</td>
+                </tr>
+                <tr>
+                  <td>Peppers, sweet, red, raw, ½ cup</td>
+                  <td>117</td>
+                  <td>13</td>
+                </tr>
+                <tr>
+                  <td>Mangos, raw, 1 whole</td>
+                  <td>112</td>
+                  <td>12</td>
+                </tr>
+                <tr>
+                  <td>Breakfast cereals, fortified with 10% of the DV for vitamin A, 1 serving</td>
+                  <td>90</td>
+                  <td>10</td>
+                </tr>
+                <tr>
+                  <td>Egg, hard boiled, 1 large</td>
+                  <td>75</td>
+                  <td>8</td>
+                </tr>
+                <tr>
+                  <td>Black-eyed peas (cowpeas), boiled, 1 cup</td>
+                  <td>66</td>
+                  <td>7</td>
+                </tr>
+                <tr>
+                  <td>Apricots, dried, sulfured, 5 apricots</td>
+                  <td>63</td>
+                  <td>7</td>
+                </tr>
+                <tr>
+                  <td>Broccoli, boiled, ½ cup</td>
+                  <td>60</td>
+                  <td>7</td>
+                </tr>
+                <tr>
+                  <td>Salmon, sockeye, cooked, 3 ounces</td>
+                  <td>59</td>
+                  <td>7</td>
+                </tr>
+                <tr>
+                  <td>Tomato juice, canned, ¾ cup</td>
+                  <td>42</td>
+                  <td>5</td>
+                </tr>
+                <tr>
+                  <td>Yogurt, plain, low fat, 1 cup</td>
+                  <td>32</td>
+                  <td>4</td>
+                </tr>
+                <tr>
+                  <td>Tuna, light, canned in oil, drained, 3 ounces</td>
+                  <td>20</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>Baked beans, canned, plain or vegetarian, 1 cup</td>
+                  <td>13</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>Summer squash, all varieties, boiled, ½ cup</td>
+                  <td>10</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>Chicken, breast meat and skin, roasted, ½ breast</td>
+                  <td>5</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>Pistachio nuts, dry roasted, 1 ounce</td>
+                  <td>4</td>
+                  <td>0</td>
+                </tr>
+              </tbody>
+            </Table>
           </div>
           <div className='vita-down'>
             <div className='vita-down-content'>
@@ -267,7 +268,7 @@ export default class VitaminA extends Component {
             </div>
           </div>
         </div>
-      </>
+      </></>
     );
   }
 }

@@ -3,13 +3,14 @@ import vitaminE_iconv from "./assests/images/vitaminE_inner.avif";
 import vitaminE_icon1v from "./assests/images/vitamin_e_head.webp";
 import "./VitaminvE.css";
 import { Link } from "react-router-dom";
+import Navbar from "../Navbar/Navbar";
 const VitaminvE = () => {
   useEffect(() => {
     // Scroll to the top of the page when component mounts
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div className="vitaminE-container-v">
+    <><Navbar /><div className="vitaminE-container-v">
       <div className="vitaminE-inner-container-v">
         <p className="vitaminE-heading-v">Vitamin E </p>
         <div className="image-container-vitaminE-v">
@@ -18,7 +19,7 @@ const VitaminvE = () => {
       </div>
 
       <div className="vitaminE-information-v">
-      <h1 className="heading-vitaminE-v">Diseases Caused by Deficiency</h1>
+        <h1 className="heading-vitaminE-v">Diseases Caused by Deficiency</h1>
         <p className="vitaminE-deficiency-text-v">
           Vitamin E deficiency is rare but can lead to several health issues,
           including:
@@ -40,8 +41,8 @@ const VitaminvE = () => {
           - Nerve damage: Severe vitamin E deficiency can lead to nerve damage,
           which can cause pain, numbness, and muscle weakness.
         </p>
-        <br/>
-        <br/>
+        <br />
+        <br />
 
         <h1 className="heading-vitaminE-v">Benefits</h1>
         <p className="vitaminE-benefits-text-v">
@@ -54,9 +55,9 @@ const VitaminvE = () => {
           against chronic diseases such as heart disease, cancer, and cognitive
           decline.
         </p>
-        <br/>
-        <br/>
-        
+        <br />
+        <br />
+
         <h1 className="heading-vitaminE-v">Sources</h1>
         <div className="image-container-vitaminE-middle-v">
           <img src={vitaminE_iconv} alt="" className="image_vitaminE-v" />
@@ -85,10 +86,10 @@ const VitaminvE = () => {
         </p>
       </div>
       <div className="last-vitev">
-       <h2>Know more about Vitamin E intake<span className="span-last-e">&#8594;</span></h2> 
-       <Link className="link-to-vite" to="/vitaminE">Click Here</Link>
+        <h2>Know more about Vitamin E intake<span className="span-last-e">&#8594;</span></h2>
+        <Link className="link-to-vite" to="/vitaminE">Click Here</Link>
       </div>
-    </div>
+    </div></>
   );
 };
 

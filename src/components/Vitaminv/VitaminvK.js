@@ -3,13 +3,15 @@ import vitaminK_iconv from './assests/images/VitaminK_inner.webp'
 import vitaminK_icon1v from "./assests/images/VitaminK_head.jpg";
 import "./VitaminvK.css";
 import { Link } from "react-router-dom";
+import Navbar from "../Navbar/Navbar";
+// import { Nav } from "react-bootstrap";
 const VitaminvK = () => {
   useEffect(() => {
     // Scroll to the top of the page when component mounts
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div className="vitaminK-container-v">
+    <><Navbar /><div className="vitaminK-container-v">
       <div className="vitaminK-inner-container-v">
         <p className="vitaminK-heading-v">Vitamin K</p>
         <div className="image-container-vitaminK-v">
@@ -18,7 +20,7 @@ const VitaminvK = () => {
       </div>
 
       <div className="vitaminK-information-v">
-      <h1 className="heading-vitaminK-v">Diseases Caused by Deficiency</h1>
+        <h1 className="heading-vitaminK-v">Diseases Caused by Deficiency</h1>
         <p className="vitaminK-deficiency-text-v">
           Vitamin K deficiency can lead to:
           <br />
@@ -30,8 +32,8 @@ const VitaminvK = () => {
           - Osteoporosis: Vitamin K is important for bone health, and deficiency
           may increase the risk of osteoporosis and fractures.
         </p>
-        <br/>
-        <br/>
+        <br />
+        <br />
         <h1 className="heading-vitaminK-v">Benefits</h1>
         <p className="vitaminK-benefits-text-v">
           Vitamin K is essential for blood clotting and bone health. It plays a
@@ -44,7 +46,7 @@ const VitaminvK = () => {
         </p>
         <br />
         <br />
-       
+
         <h1 className="heading-vitaminK-v">Sources</h1>
         <div className="image-container-vitaminK-middle-v">
           <img src={vitaminK_iconv} alt="" className="image_vitaminK-v" />
@@ -76,10 +78,10 @@ const VitaminvK = () => {
         </p>
       </div>
       <div className="last-vitkv">
-       <h2>Know more about Vitamin K intake<span className="span-last-k">&#8594;</span></h2> 
-       <Link className="link-to-vitk" to="/vitaminK">Click Here</Link>
+        <h2>Know more about Vitamin K intake<span className="span-last-k">&#8594;</span></h2>
+        <Link className="link-to-vitk" to="/vitaminK">Click Here</Link>
       </div>
-    </div>
+    </div></>
   );
 };
 

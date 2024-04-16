@@ -3,13 +3,14 @@ import vitaminC_iconv from "./assests/images/VitaminC.jpg";
 import vitaminC_icon1v from "./assests/images/VitaminC_head_cleanup.jpg";
 import "./VitaminvC.css";
 import { Link } from "react-router-dom";
+import Navbar from "../Navbar/Navbar";
 const VitaminvC = () => {
   useEffect(() => {
     // Scroll to the top of the page when component mounts
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div className="vitaminC-container-v">
+    <><Navbar /><div className="vitaminC-container-v">
       <div className="vitaminC-inner-container-v">
         <p className="vitaminC-heading-v">Vitamin C </p>
         <div className="image-container-vitaminC-v">
@@ -55,8 +56,8 @@ const VitaminvC = () => {
           <li>Having a restrictive diet or food allergies</li>
           <li>type 1 diabetes inflammatory bowel disease</li>
         </ul>
-        <br/>
-        <br/>
+        <br />
+        <br />
 
         <h1 className="heading-vitaminC-v">Benefits</h1>
         <p className="vitaminC-benefits-text-v">
@@ -88,13 +89,13 @@ const VitaminvC = () => {
           the body lacks enough healthy red blood cells to carry adequate oxygen
           to the body's tissues.
         </p>
-        <br/>
-        <br/>
+        <br />
+        <br />
         <h1 className="heading-vitaminC-v">Sources</h1>
         <div className="image-container-vitaminC-middle-v">
           <img src={vitaminC_iconv} alt="" className="image_vitaminC" />
         </div>
-        
+
         <p className="vitaminC-sources-text-v">
           Vitamin C is found in a variety of foods, particularly fruits and
           vegetables. Some of the best food sources of vitamin C include:
@@ -123,10 +124,10 @@ const VitaminvC = () => {
         </p>
       </div>
       <div className="last-vitcv">
-       <h2>Know more about Vitamin C intake<span className="span-last-c">&#8594;</span></h2> 
-       <Link className="link-to-vitc" to="/vitaminC">Click Here</Link>
+        <h2>Know more about Vitamin C intake<span className="span-last-c">&#8594;</span></h2>
+        <Link className="link-to-vitc" to="/vitaminC">Click Here</Link>
       </div>
-    </div>
+    </div></>
   );
 };
 
