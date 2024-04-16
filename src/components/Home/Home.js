@@ -39,6 +39,10 @@ export default class Home extends Component {
             <Link className='inner-link-v' to="/vitaminv">Click here</Link>
           </div>
         </>
+        <div className='sq-box6'>
+        <h2>Get food recommendations <br></br>using BMI Calculator <span>&#8594;</span> </h2>
+            <Link className='inner-link-v6' to="/bmi">Know more</Link>
+        </div>
   <div className='sq-box4'>
     <h1>Quick lookup<br></br>of food<br></br>nutritional values<span className='span-sq4'>&#8594;</span></h1>
     <Link to='/search' className='btn-sq4'>

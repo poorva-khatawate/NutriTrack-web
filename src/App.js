@@ -30,6 +30,7 @@ import Vegetables from './components/Track-calorie/FruVege/Vegetables';
 import Cart from './components/Track-calorie/Cart';
 import Nutritionist from './components/Nutritionist/Nutritionist';
 import { CartProvider } from 'react-use-cart';
+import BmiCalculator from './components/BMI/BmiCalculator';
 function App() {
   return (
     <Router>
@@ -62,6 +63,7 @@ function App() {
           <Route path='/vegetables' element={<Vegetables/>} />
           <Route path='/nutritionist' element={<Nutritionist/>} />
           <Route path='/cart' element={<CartProvider> <Cart/></CartProvider>} />
+          <Route path='/bmi' element={<BmiCalculator/>}/>
         </Routes>
         <Footer />
       </div>
