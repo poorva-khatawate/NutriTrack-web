@@ -23,7 +23,7 @@ const handleLogOut = () => {
         <div className='nav-search'>
         <Link to="/home" className='nav-links'>Home</Link>
         <Link to="/about" className='nav-links'>About</Link>
-        <Link to="/login" className='nav-links' onClick={handleLogOut}>Logout</Link>
+        <Link to="/" className='nav-links' onClick={handleLogOut}>Logout</Link>
         </div>
       </div>
   );

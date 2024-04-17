@@ -1,7 +1,7 @@
 import React from "react";
 import "./Vegetable.css";
 import { useCart } from 'react-use-cart';
-
+import toast from "react-hot-toast";
 const VegetableCart = ({ id,img, title, Measurement, calories }) => {
     const { addItem } = useCart();
     const item = {
@@ -10,6 +10,19 @@ const VegetableCart = ({ id,img, title, Measurement, calories }) => {
       title:title,
       Measurement: Measurement,
       price: calories
+    };
+
+    const handleAddToCart = () => {
+      addItem(item);
+      toast.success('Item added to cart!', {
+        style: {
+          borderRadius: '10px',
+          background: '#333',
+          color: '#fff',
+          padding: '16px',
+          fontSize: '1.2em' // Increase the font size
+        }
+      });
     };
   return (
     <div className="card_vegetable">
@@ -21,7 +34,7 @@ const VegetableCart = ({ id,img, title, Measurement, calories }) => {
         <h3>{title}</h3>
         {/* <p>{Measurement}</p> */}
         <p>{calories} calories</p>
-        <button className="button_vegetable" onClick={() => addItem(item)}>Add to cart</button>
+        <button className="btn btn-success mt-auto" onClick={handleAddToCart}>Add to cart</button>
       </div>
     </div>
   );

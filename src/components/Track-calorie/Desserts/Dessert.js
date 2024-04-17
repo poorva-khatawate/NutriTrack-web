@@ -13,9 +13,9 @@ export default class Beverages extends Component {
         window.scrollTo(0, 0);
       }
   render() {
-    <Navbar />
+    
     return (
-        <><div>
+        <><Navbar /><><div>
             <Tracknavbar />
         </div><div>
                 <CartProvider>
@@ -30,7 +30,7 @@ export default class Beverages extends Component {
                 </CartProvider>
             </div>
             <div className='common-cal'>
-            <Link className='view-cart-link' to="/cart">View Cart<span>&#8594;</span></Link></div></>
+                <Link className='view-cart-link' to="/cart">View Cart<span>&#8594;</span></Link></div></></>
     )
   }
 }

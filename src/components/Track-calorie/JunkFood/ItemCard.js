@@ -36,7 +36,7 @@ const ItemCard = (props) => {
               <h5 className="card-title">{props.title}</h5>
               <p className="card-text">{props.calories}</p>
               <p className="card-text">{props.desc}</p>
-              <button className="btn btn-success" onClick={handleAddToCart}>Add to cart</button>
+              <button className="btn btn-success mt-auto" onClick={handleAddToCart}>Add to cart</button>
             </div>
           </div>
         </div>

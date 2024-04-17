@@ -4,11 +4,16 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Toaster } from 'react-hot-toast';
 // import Junkfood from './components/Track-calorie/JunkFood/JunkFoods';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <div>
     <App />
+    <Toaster />
+    </div>
+    
     
   </React.StrictMode>
 );
