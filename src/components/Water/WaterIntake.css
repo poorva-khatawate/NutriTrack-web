@@ -1,0 +1,54 @@
+.water-btn:hover{
+    background-color: rgb(23, 111, 188);
+  }
+  .water-h1{
+    padding-top: 30px;
+    text-align: center;
+    font-family: cursive;
+  }
+  .water-yet
+  {
+    /* background-color: rgb(62, 195, 252); */
+    font-style: bold;
+  }
+  .water-done{
+    background-color: rgb(255, 174, 0);
+  }
+  .water-main{
+    background-image: url('https://t4.ftcdn.net/jpg/02/65/02/77/240_F_265027744_N8iTqFJuSWifzHKCP4XCicTPnNwCbTSp.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+  }
+  input
+  {
+    float: right;
+  }
+  .form-group
+  {
+    text-align: center;
+    
+  }
+  .age-range{
+    font-size: 22px;
+    padding: 5px;
+  }
+  
+  .op-age{
+    font-size: 15px;
+  }
+  .weight-water{
+    font-size: 22px;
+    padding: 5px;
+  }
+
+  .mt-3{
+    font-size: 25px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    font-style: italic;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }

@@ -32,7 +32,7 @@ import Nutritionist from './components/Nutritionist/Nutritionist';
 import { CartProvider } from 'react-use-cart';
 import BmiCalculator from './components/BMI/BmiCalculator';
 import LoginBase from './components/LoginNew/LoginBase';
-
+import WaterIntake from './components/Water/WaterIntake';
 
 
 function App() {
@@ -67,6 +67,7 @@ function App() {
           <Route path='/nutritionist' element={<Nutritionist/>} />
           <Route path='/cart' element={<CartProvider> <Cart/></CartProvider>} />
           <Route path='/bmi' element={<BmiCalculator/>}/>
+          <Route path='/water' element={<WaterIntake/>}/>
           <Route path='/' element={<LoginBase/>} />
         </Routes>
         <Footer />
