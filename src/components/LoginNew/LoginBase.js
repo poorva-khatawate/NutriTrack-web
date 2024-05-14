@@ -9,7 +9,7 @@ import { useNavigate } from "react-router-dom";
 const LoginBase = () => {
   const [toggleSignInForm, setToggleSignInForm] = useState(true);
   const [errMessage, setErrMessage] = useState("");
-  const navigate=useNavigate()
+  const navigate=useNavigate();
   const email = useRef(null);
   const password = useRef(null);
 

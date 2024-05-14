@@ -1,5 +1,7 @@
 .footer-main{
-    /* position: absolute; */
+    /* flex: 1; */
+    /* width: auto; */
+    position: absolute;
     bottom: 0;
     right: 0;
     left: 0;
@@ -35,3 +37,5 @@
     justify-content: center;
     gap:20px;
 }
+
+

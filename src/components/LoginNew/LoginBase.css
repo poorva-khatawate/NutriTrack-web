@@ -1,18 +1,13 @@
 .login_image_container{
-    min-width:100vw;
-    min-height: 100vh;
-    position: relative;
+  
 }
 
 .login_conatiner{
-    min-width:100vw;
-    min-height: 100vh;
+   
 }
 
 .login_photo{
     width: 100%;
-    /* position: absolute; */
-    margin-bottom: -40px;
     object-fit: cover;
 }
 
@@ -20,10 +15,11 @@
     position: absolute;
     background-color:white;
     opacity: 0.8;
-    width:25%;
+    height: auto;
     display: flex;
     flex-direction: column;
-    gap:25px;
+    gap:2vw;
+    width:max(300px,25vw);
     padding: 40px;
     top:15%;
     border-radius: 10px;
@@ -49,7 +45,7 @@
 
 .login_text{
     color:black;
-    font-size: xx-large;
+    font-size:40px;
     margin: 0 auto;
     font-weight: bold;
 }
