@@ -15,3 +15,34 @@
     font-size: 1.5rem;
     font-style: italic;
 }
+
+/* Media query for small devices */
+@media (max-width: 768px) {
+    .about-main {
+      padding: 20px;
+    }
+    
+    .about-main h5 {
+      font-size: 1.1rem;
+    }
+  }
+  
+  /* Media query for medium devices */
+  @media (max-width: 992px) {
+    .about-main {
+      max-width: 700px;
+    }
+}
+
+/* Media query for small devices */
+@media (max-width: 576px) {
+    .about-main {
+      padding: 15px;
+      margin-top: 20px;
+      margin-bottom: 30px;
+    }
+    
+    .about-main h5 {
+      font-size: 0.8rem;
+    }
+  }
