@@ -42,6 +42,12 @@
     .view-cart-link {
         font-size: 40px;
     }
+    .cards-comp{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 @media (max-width: 576px) {
@@ -51,6 +57,12 @@
   
     .view-cart-link {
         font-size: 30px;
+    }
+    .cards-comp{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
 
@@ -67,4 +79,11 @@
 
 .card.p-0.overflow-hidden.h-100.shadow {
     height: 100%;
+}
+
+.cards-comp{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
