@@ -33,57 +33,25 @@
     color: rgb(75, 60, 40);
 }
 
-/* Media Queries */
+
+
 @media (max-width: 768px) {
-    .cal-h1-track {
-        font-size: 40px;
+    .cards-comp .row.justify-content-center {
+        flex-wrap: wrap;
     }
-  
-    .view-cart-link {
-        font-size: 40px;
-    }
-    .cards-comp{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+
+    .cards-comp .col-md-4.mb-4 {
+        flex: 0 0 50%;
+        max-width: 50%;
+        padding: 10px;
     }
 }
+
 
 @media (max-width: 576px) {
-    .cal-h1-track {
-        font-size: 30px;
+    .cards-comp .col-md-4.mb-4 {
+        flex-basis: 50%;
+        max-width: 50%;
+        padding: 10px;
     }
-  
-    .view-cart-link {
-        font-size: 30px;
-    }
-    .cards-comp{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-}
-
-/* Additional styles for card alignment */
-.row.justify-content-center {
-    flex-wrap: wrap;
-}
-
-.col-md-4.mb-4 {
-    flex: 0 0 50%;
-    max-width: 50%;
-    padding: 10px;
-}
-
-.card.p-0.overflow-hidden.h-100.shadow {
-    height: 100%;
-}
-
-.cards-comp{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
