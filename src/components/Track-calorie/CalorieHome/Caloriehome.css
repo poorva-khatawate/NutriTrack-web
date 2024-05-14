@@ -38,3 +38,37 @@
     text-decoration: none;
     color: rgb(30, 30, 59);
   }
+
+
+  /* For screens smaller than 768px (tablets and phones) */
+@media (max-width: 768px) {
+    .h1-calorie-main {
+      font-size: 60px; /* Reduce the font size for the main heading */
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+    .card-img-top {
+        width: 150px;
+        height: 200px; /* Reduce the height of the images */
+      }
+    .h3-calorie-main {
+      font-size: 24px; /* Reduce the font size for the subheading */
+      padding-top: 10px;
+      padding-bottom: 20px;
+    }
+  }
+  
+  /* For screens smaller than 576px (phones) */
+  @media (max-width: 576px) {
+    .h1-calorie-main {
+      font-size: 35px; /* Further reduce the font size for smaller phones */
+    }
+    .h3-calorie-main {
+      font-size: 18px; /* Further reduce the font size for smaller phones */
+    }
+    .card-img-top {
+        width: 100px;
+        height: 150px; /* Further reduce the height of the images for smaller phones */
+      }
+  }
+  
