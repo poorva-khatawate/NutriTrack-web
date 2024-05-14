@@ -1,7 +1,7 @@
 import React from 'react';
 import { signOut } from "firebase/auth";
 import { Link, useNavigate } from 'react-router-dom';
-import './Navrbar.css';
+import './Navbar.css';
 import { auth } from '../../Firebase';
 const Navbar = () => {
   const navigate=useNavigate();
@@ -18,7 +18,7 @@ const handleLogOut = () => {
   return (
     <div className='navbarr'>
       <div className='nav-leftt'>
-        <h1 className='nav-logo'>FoodWeb</h1>
+        <h1 className='nav-logo'>NutriTrack</h1>
         </div>
         <div className='nav-search'>
         <Link to="/home" className='nav-links'>Home</Link>
