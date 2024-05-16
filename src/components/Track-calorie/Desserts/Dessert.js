@@ -17,7 +17,8 @@ export default class Beverages extends Component {
     return (
         <><Navbar /><><div>
             <Tracknavbar />
-        </div><div>
+        </div>
+        <div className='cards-comp'>
                 <CartProvider>
                     <h1 className='cal-h1-track text-center mt-3'>Dessert Items</h1>
                     <section className='py-4 container'>

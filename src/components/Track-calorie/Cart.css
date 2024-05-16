@@ -1,0 +1,7 @@
+/* Media Query for smaller devices */
+@media (max-width: 576px) {
+    .remove-btn {
+        padding: 7px 10px; /* Adjust padding for smaller devices */
+        font-size: 14px; /* Adjust font size for smaller devices */
+    }
+}
