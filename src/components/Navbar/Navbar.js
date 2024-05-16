@@ -1,19 +1,9 @@
 import React from 'react';
-import { signOut } from "firebase/auth";
-import { Link, useNavigate } from 'react-router-dom';
+import { Link} from 'react-router-dom';
 import './Navbar.css';
-import { auth } from '../../Firebase';
-const Navbar = ({ toggleLoginForm, setToggleLoginForm }) => {
-  const navigate=useNavigate();
 
-// const handleLogOut = () => {
-//   signOut(auth).then(() => {
-//     // Sign-out successful.
-//     navigate("/");
-//   }).catch((error) => {
-//     // An error happened.
-//   });
-//   };
+const Navbar = ({setToggleLoginForm }) => {
+
 
   return (
     <div className='navbarr'>

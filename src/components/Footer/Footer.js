@@ -3,7 +3,7 @@ import "./Footer.css";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaFacebookSquare } from "react-icons/fa";
 import { GrInstagram } from "react-icons/gr";
-import  footer_image  from "./Footer.png";
+
 
 const Footer = () => {
   return (

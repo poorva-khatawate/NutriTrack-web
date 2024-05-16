@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import './Home.css';
 import { Link } from 'react-router-dom';
 import Videoser from './Video/searchele.mp4';
-import Navbar from '../Navbar/Navbar';
 // import { NavDropdown } from 'react-bootstrap';
 export default class Home extends Component {
   componentDidMount() {
