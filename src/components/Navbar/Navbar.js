@@ -3,7 +3,6 @@ import { Link} from 'react-router-dom';
 import './Navbar.css';
 import { RxHamburgerMenu } from "react-icons/rx";
 const Navbar = ({ toggleLoginForm, setToggleLoginForm }) => {
-  const navigate=useNavigate();
 
 // const handleLogOut = () => {
 //   signOut(auth).then(() => {
