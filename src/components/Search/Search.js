@@ -4,7 +4,7 @@ import './Search.css'
 import { useState } from "react";
 import { useEffect } from "react";
 import { FaSearch } from 'react-icons/fa';
-import Navbar from "../Navbar/Navbar";
+
 
 function Search() {
   const [query, setQuery] = useState('');
@@ -102,7 +102,7 @@ function Search() {
 
 
   return (
-    <><Navbar /><div className="search-container">
+    <><div className="search-container">
       <h1 class="page-heading">Food Nutritional Values At A Glance</h1>
       <div className="search-form">
         <input

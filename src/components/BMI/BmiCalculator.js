@@ -1,9 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import './BmiCalculator.css'; 
-import Navbar from '../Navbar/Navbar';
 import axios from 'axios';
 
 function BmiCalculator() {
+    useEffect(() => {
+        // Scroll to the top of the page when component mounts
+        window.scrollTo(0, 0);
+      }, []);
     const [weight, setWeight] = useState('');
     const [height, setHeight] = useState('');
     const [bmi, setBmi] = useState('');
@@ -53,7 +56,7 @@ function BmiCalculator() {
     };
 
     return (
-        <><Navbar /><><div className='bmi-main'>
+        <><><div className='bmi-main'>
             <div className='container-bmi'>
                 <h1 className='title-bmi'>BMI Calculator</h1>
                 <form className='form-bmi' onSubmit={calculateBMI}>

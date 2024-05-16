@@ -7,7 +7,6 @@ import Junk from './assets/junk.jpeg';
 import Beverages from './assets/beverage.jpeg';
 import Dessert from './assets/dessert.jpeg';
 import { Link } from 'react-router-dom';
-import Navbar from '../../Navbar/Navbar';
 
 export default class Caloriehome extends Component {
     componentDidMount() {
@@ -18,7 +17,6 @@ export default class Caloriehome extends Component {
     render() {
         return (
             <>
-                <Navbar />
                 <div className='main-caloriehome'>
                     <h1 className='h1-calorie-main'>Calorie Tracker</h1>
                     <h3 className='h3-calorie-main'>Keep track of your daily calorie intake to maintain a healthy lifestyle.</h3>
