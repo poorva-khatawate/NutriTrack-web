@@ -1,99 +1,169 @@
 .navbarr {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #26263f;
-    color: white;
-    padding: 10px 20px;
-    height: 120px;
-    /* position: fixed;
-    top: 0;
-    right: 0;
-    left: 0; */
-  }
-  
-  .nav-leftt {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end; /* Align items to the right */
-    gap: 15px;
-    align-items: center; /* Align items vertically */
-  }
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #26263f;
+  color: white;
+  padding: 10px 20px;
+  height: 120px;
+
+}
+
+.hamburger_icon {
+  width: 36px;
+  height: 36px;
+  display: none;
+}
+
+.hamburger {
+  display: inline-block;
+  position: relative;
+}
+
+.hamburger_nav {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  background-color: #26263f;
+  right: -20px;
+  top: 0;
+  gap: 40px;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  justify-content: center;
+  /* align-items: center; */
+  width: 250px;
+}
+
+.cross {
+  width: 36px;
+  height: 36px;
+  color: white;
+  /* justify-self:  flex-end; */
+}
+
+.home_res {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* justify-content: center; */
+}
+
+.nav_search{
+  display: flex;
+  flex-direction:column ;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.nav-leftt {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  /* Align items to the right */
+  gap: 15px;
+  align-items: center;
+  /* Align items vertically */
+}
+
+.nav-links {
+  color: white;
+  text-decoration: none;
+  margin-right: 15px;
+  font-size: 35px;
+  /* Increase font size */
+  margin-right: 38px;
+}
+
+.nav-links:hover {
+  text-decoration: underline;
+  color: rgb(168, 208, 242);
+}
+
+.nav-logo {
+  margin-left: 40px;
+}
+
+.nav-logo:hover {
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 10px 19px 18px rgba(0, 0, 0, 0.8);
+  color: rgb(155, 191, 231);
+}
+
+p.sign_btn {
+  display: inline-block;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  /* .nav-leftt {
+      display: none;
+    } */
+
   .nav-links {
+    display: none;
+
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    background-color: #26263f;
+    padding: 10px;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+    cursor: pointer;
+  }
+
+  .nav-links1 {
     color: white;
     text-decoration: none;
     margin-right: 15px;
-    font-size: 35px; /* Increase font size */
+    font-size: 35px;
+    /* Increase font size */
     margin-right: 38px;
   }
   
-  .nav-links:hover {
+  .nav-links1:hover {
     text-decoration: underline;
     color: rgb(168, 208, 242);
   }
-  .nav-logo{
-    margin-left: 40px;
-  }
-  .nav-logo:hover{
-    text-decoration: none;
+
+  span.sign_btn {
     cursor: pointer;
-    box-shadow: 10px 19px 18px rgba(0, 0, 0, 0.8);
-    color: rgb(155, 191, 231);
   }
 
-  p.sign_btn{
+  .hamburger_icon {
     display: inline-block;
     cursor: pointer;
   }
 
-  @media (max-width: 768px) {
-    /* .nav-leftt {
-      display: none;
-    } */
-  
-    .nav-links {
-      display: none;
-      flex-direction: column;
-      position: absolute;
-      top: 80px;
-      right: 0;
-      background-color: #26263f;
-      padding: 10px;
-      width: 100%;
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.3s ease-in-out;
-      cursor: pointer;
-    }
-
-    span.sign_btn{
-      cursor: pointer;
-    }
-  
-    .nav-links a {
-      color: white;
-      text-decoration: none;
-      margin-bottom: 10px;
-    }
-  
-    .menu-icon {
-      display: block;
-      cursor: pointer;
-      color: #fff;
-      font-size: 1.5rem;
-      margin-right: 20px;
-    }
-  
-    .nav-logo {
-      font-size: 24px;
-      margin-left: 0;
-    }
-  
-    .navbarr.active .nav-links {
-      display: flex;
-      max-height: 200px; /* Adjust as needed */
-    }
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-bottom: 10px;
   }
-  
-  
+
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.5rem;
+    margin-right: 20px;
+  }
+
+  .nav-logo {
+    font-size: 24px;
+    margin-left: 0;
+  }
+
+  .navbarr.active .nav-links {
+    display: flex;
+    max-height: 200px;
+    /* Adjust as needed */
+  }
+}
