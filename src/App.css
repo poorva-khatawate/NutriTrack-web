@@ -7,6 +7,27 @@
   body{
     position: relative;
     min-height: 100%;
-    padding-bottom: 300px;
-    /* display: flex; */
+    padding-bottom: 400px;
+  }
+
+  .App{
+    height: 100%;
+  }
+
+  @media(max-width:950px){
+    body{
+      padding-bottom: 350px;
+    }
+  }
+
+  @media(max-width:1048px){
+    body{
+      padding-bottom: 350px;
+    }
+  }
+
+  @media(max-width:750px){
+    body{
+      padding-bottom: 680px;
+    }
   }
