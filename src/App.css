@@ -3,9 +3,11 @@
     padding:0;
     box-sizing:border-box;
   }
-  
-  body{
+  html{
     position: relative;
+  }
+  body{
+    /* position: relative; */
     min-height: 100%;
     padding-bottom: 400px;
   }
