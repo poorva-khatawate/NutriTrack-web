@@ -3,7 +3,6 @@ import vitaminD_iconv from "./assests/images/vitamin-d.webp";
 import vitaminD_icon1v from "./assests/images/Vitamin-d-head.avif";
 import "./VitaminvD.css";
 import { Link } from "react-router-dom";
-import Navbar from "../Navbar/Navbar";
 const VitaminvD = () => {
   useEffect(() => {
     // Scroll to the top of the page when component mounts
@@ -11,7 +10,7 @@ const VitaminvD = () => {
   }, []);
  
   return (
-    <><Navbar /><div className="vitaminD-container-v">
+    <><div className="vitaminD-container-v">
       <div className="vitaminD-inner-container-v">
         <p className="vitaminD-heading-v">Vitamin D </p>
         <div className="image-container-vitaminD-v">

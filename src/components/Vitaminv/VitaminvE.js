@@ -3,14 +3,14 @@ import vitaminE_iconv from "./assests/images/vitaminE_inner.avif";
 import vitaminE_icon1v from "./assests/images/vitamin_e_head.webp";
 import "./VitaminvE.css";
 import { Link } from "react-router-dom";
-import Navbar from "../Navbar/Navbar";
+
 const VitaminvE = () => {
   useEffect(() => {
     // Scroll to the top of the page when component mounts
     window.scrollTo(0, 0);
   }, []);
   return (
-    <><Navbar /><div className="vitaminE-container-v">
+    <><div className="vitaminE-container-v">
       <div className="vitaminE-inner-container-v">
         <p className="vitaminE-heading-v">Vitamin E </p>
         <div className="image-container-vitaminE-v">
