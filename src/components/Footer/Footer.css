@@ -1,41 +1,146 @@
-.footer-main{
-    /* flex: 1; */
-    /* width: auto; */
+.footer {
+    color: #d9d9d9;
+    background: #323232;
+    padding: 20px 8vw;
+    padding-top: 80px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     position: absolute;
     bottom: 0;
-    right: 0;
-    left: 0;
-    padding:20px 200px;
-    background-color: #26263f;
+}
+
+.footer_left,
+.footer_center,
+.footer_right {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+
+.footer_content {
+    /* width: 100%; */
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 80px;
+
+}
+
+.footer_social_icons img {
+    margin: 5px;
+}
+
+.footer_left h1,
+.footer_center h1,
+.footer_right h1 {
     color: white;
 }
 
-.flex-container-footer{
-    display:flex;
-    justify-content: space-between;
-}
-
-.flex-box-footer{
-    margin: 20px;
-    display: flex;
-    justify-content: center;
-}
-
-.footer1{
+.footer_left li,
+.footer_center li,
+.footer_right li {
     list-style: none;
+    margin-top: 10px;
     cursor: pointer;
 }
 
-.footer1:hover{
-    color: blue;
+.footer_icon{
+    font-weight: bold;
 }
 
-.icons-footer{
-    cursor: pointer;
-    font-size: 20px;
-    display:flex;
-    justify-content: center;
-    gap:20px;
+.footer_social_icons img {
+    width: 40px;
+    margin-right: 15px;
 }
 
+.footer hr {
+    width: 100%;
+    height: 2px;
+    border: none;
+    background-color: gray;
+    margin: 20px 0;
+}
 
+.footer_social_icons{
+    display: flex;
+    /* flex-direction: column; */
+    gap: 10px;
+}
+
+/* .footer_copyright {
+    text-align: center;
+} */
+
+@media(max-width:950px) {
+
+    .footer_left img {
+        width: 100px;
+    }
+
+    .footer_social_icons img {
+        width: 30px;
+        margin-right: 10px;
+    }
+
+    .footer_content {
+        gap: 30px;
+    }
+
+    .footer {
+        font-size: 14px;
+    }
+    .footer_center h1{
+        font-size: 18px;
+    }
+    .footer_right h1{
+        font-size: 18px;
+    }
+}
+
+@media(max-width:1050px){
+    .footer_social_icons img {
+        width: 25px;
+        margin-right: 8px;
+    }
+    .footer_content {
+        gap: 10px;
+    }
+    .footer {
+        font-size: 12px;
+    }
+    .footer_center h1{
+        font-size: 16px;
+    }
+    .footer_right h1{
+        font-size: 16px;
+    }
+}
+/* 
+@media(max-width:580px){
+    .footer_social_icons img {
+        width: 20px;
+        margin-right: 6px;
+    }
+    .footer_content {
+        gap: 8px;
+    }
+    .footer {
+        font-size: 10px;
+    }
+    .footer_center h1{
+        font-size: 14px;
+    }
+    .footer_right h1{
+        font-size: 14px;
+    }
+} */
+
+@media(max-width:750px){
+    .footer_content {
+        display:flex;
+        flex-direction: column;
+        gap:30px;
+    }
+}

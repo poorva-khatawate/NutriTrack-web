@@ -1,7 +1,6 @@
 import './VitaminE.css';
 import Table from 'react-bootstrap/Table';
 import React, { Component } from 'react';
-import Navbar from '../Navbar/Navbar';
 export default class VitaminD extends Component {
   componentDidMount() {
     // Scroll to the top of the page when component mounts
@@ -9,7 +8,6 @@ export default class VitaminD extends Component {
   }
   render() {
     return (
-      <><Navbar /><>
         <div className='vite'>
           <div className='vite-main'>
             <img className='vite-img' src='https://healthymaster.in/cdn/shop/articles/vitamin_e.png?v=1690112264' alt='vita' />
@@ -185,7 +183,6 @@ export default class VitaminD extends Component {
             </div>
           </div>
         </div>
-      </></>
     );
   }
 }

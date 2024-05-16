@@ -11,7 +11,7 @@ export default class Home extends Component {
   }
   render() {
     return (
-      <><Navbar /><><><div className='sq-main'>
+      <><><><div className='sq-main'>
         <><div className='sq-box1'>
           <div className='box1-inner'>
             <h1 className='be-h'>Be healthy</h1>
