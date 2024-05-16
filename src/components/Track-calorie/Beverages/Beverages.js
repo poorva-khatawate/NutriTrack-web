@@ -6,7 +6,6 @@ import { CartProvider } from 'react-use-cart';
 import Tracknavbar from '../Tracknavbar';
 import { Link } from 'react-router-dom';
 import '../CommonCalorie.css';
-import Navbar from '../../Navbar/Navbar';
 export default class Beverages extends Component {
   componentDidMount() {
     // Scroll to the top of the page when component mounts
@@ -14,7 +13,7 @@ export default class Beverages extends Component {
   }
   render() {
     return (
-      <><Navbar /><>
+      <><>
       <div>
         <Tracknavbar />
       </div><div>

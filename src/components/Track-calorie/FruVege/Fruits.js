@@ -7,15 +7,13 @@ import Tracknavbar from "../Tracknavbar";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import '../CommonCalorie.css';
-import Navbar from "../../Navbar/Navbar";
-import { Nav } from "react-bootstrap";
 const Fruits = () => {
   useEffect(() => {
     // Scroll to the top of the page when component mounts
     window.scrollTo(0, 0);
   }, []);
   return (
-    <><Navbar /><><div>
+    <><><div>
       <Tracknavbar />
     </div>
       <CartProvider>

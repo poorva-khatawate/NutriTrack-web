@@ -5,14 +5,13 @@ import VegetableCart from "./VegetableCart";
 import { CartProvider } from "react-use-cart";
 import Tracknavbar from "../Tracknavbar";
 import { Link } from "react-router-dom";
-import Navbar from "../../Navbar/Navbar";
 const Vegetables = () => {
   useEffect(() => {
     // Scroll to the top of the page when component mounts
     window.scrollTo(0, 0);
   }, []);
   return (
-    <><Navbar /><><><div>
+    <><><><div>
       <Tracknavbar />
     </div><CartProvider>
         <div className="vegetable_container_heading">

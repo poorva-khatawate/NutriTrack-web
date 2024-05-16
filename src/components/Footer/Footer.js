@@ -3,6 +3,10 @@ import "./Footer.css";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaFacebookSquare } from "react-icons/fa";
 import { GrInstagram } from "react-icons/gr";
+<<<<<<< HEAD
+=======
+
+>>>>>>> 258c8d009250ff0516ac7e760c1d686eed067c6d
 
 const Footer = () => {
   return (

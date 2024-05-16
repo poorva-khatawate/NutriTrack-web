@@ -1,6 +1,5 @@
 import React from 'react';
-import { signOut } from "firebase/auth";
-import { Link, useNavigate } from 'react-router-dom';
+import { Link} from 'react-router-dom';
 import './Navbar.css';
 import { RxHamburgerMenu } from "react-icons/rx";
 const Navbar = ({ toggleLoginForm, setToggleLoginForm }) => {

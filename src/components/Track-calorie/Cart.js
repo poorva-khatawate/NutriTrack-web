@@ -1,7 +1,7 @@
 import React from 'react';
 import { useCart } from 'react-use-cart';
 import { toast } from 'react-hot-toast';
-import Navbar from '../Navbar/Navbar';
+
 import './Cart.css';
 const Cart = () => {
     const {
@@ -32,7 +32,7 @@ const Cart = () => {
 
 
     return (
-        <><Navbar /><><section className="py-4 container">
+        <><><section className="py-4 container">
             <div className="row justify-content-center">
                 <div className="col-12">
                     <h5>Cart ({totalUniqueItems}) Total items: ({totalItems})</h5>

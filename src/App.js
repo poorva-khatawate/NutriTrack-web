@@ -6,8 +6,7 @@ import About from "./components/About/About";
 import {
   BrowserRouter as Router,
   Routes,
-  Route,
-  Outlet,
+  Route
 } from "react-router-dom";
 import VitaminA from "./components/Vitamins/VitaminA";
 import VitaminB from "./components/Vitamins/VitaminB";
@@ -15,7 +14,7 @@ import VitaminC from "./components/Vitamins/VitaminC";
 import VitaminD from "./components/Vitamins/VitaminD";
 import VitaminK from "./components/Vitamins/VitaminK";
 import VitaminE from "./components/Vitamins/VitaminE";
-import LoginComponent from "./components/Login/LoginComponent";
+
 import Footer from "./components/Footer/Footer";
 import Vitaminv from "./components/Vitaminv/Vitaminv";
 import VitaminvA from "./components/Vitaminv/VitaminvA";
@@ -36,7 +35,6 @@ import Cart from "./components/Track-calorie/Cart";
 import Nutritionist from "./components/Nutritionist/Nutritionist";
 import { CartProvider } from "react-use-cart";
 import BmiCalculator from "./components/BMI/BmiCalculator";
-import LoginBase from "./components/LoginNew/LoginBase";
 import WaterIntake from "./components/Water/WaterIntake";
 import Login2 from "./components/Login2/Login2";
 import Navbar from "./components/Navbar/Navbar";
