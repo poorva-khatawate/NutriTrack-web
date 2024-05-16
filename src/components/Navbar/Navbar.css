@@ -42,10 +42,15 @@
     color: rgb(155, 191, 231);
   }
 
+  p.sign_btn{
+    display: inline-block;
+    cursor: pointer;
+  }
+
   @media (max-width: 768px) {
-    .nav-leftt {
+    /* .nav-leftt {
       display: none;
-    }
+    } */
   
     .nav-links {
       display: none;
@@ -59,6 +64,11 @@
       max-height: 0;
       overflow: hidden;
       transition: max-height 0.3s ease-in-out;
+      cursor: pointer;
+    }
+
+    span.sign_btn{
+      cursor: pointer;
     }
   
     .nav-links a {

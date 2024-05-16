@@ -2,7 +2,7 @@ import React from 'react';
 import { signOut } from "firebase/auth";
 import { Link, useNavigate } from 'react-router-dom';
 import './Navbar.css';
-import { auth } from '../../Firebase';
+import { RxHamburgerMenu } from "react-icons/rx";
 const Navbar = ({ toggleLoginForm, setToggleLoginForm }) => {
   const navigate=useNavigate();
 
@@ -24,7 +24,7 @@ const Navbar = ({ toggleLoginForm, setToggleLoginForm }) => {
         <Link to="/" className='nav-links'>Home</Link>
         <Link to="/about" className='nav-links'>About</Link>
         {/* <Link to="/" className='nav-links' onClick={handleLogOut}>Logout</Link> */}
-        <span className='nav-links' onClick={() => setToggleLoginForm(true)}>Sign in</span>
+        <p className='nav-links sign_btn' onClick={() => setToggleLoginForm(true)}>Sign in</p>
         </div>
       </div>
   );

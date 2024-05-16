@@ -23,7 +23,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width:max(20vw,300px);
+    width:max(24vw,300px);
     gap:20px;
     padding: 20px;
     background-color: white;
