@@ -7,7 +7,7 @@ const WaterIntake = () => {
   const [weight, setWeight] = useState('');
   const [intakeRecommendation, setIntakeRecommendation] = useState('');
   const [totalIntake,setTotalIntake]=useState(0);
-  const [setRemainingIntake] = useState(0); 
+  const [remainingIntake, setRemainingIntake] = useState(0); 
 
   const handleAgeRangeChange = (e) => {
     console.log(e);
