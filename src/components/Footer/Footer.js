@@ -12,10 +12,8 @@ const Footer = () => {
         <div className="footer_left">
             <h1 className="footer_icon">Nutritrack</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
-            quo, omnis est dignissimos animi doloremque facere dolor debitis
-            quibusdam libero at aspernatur repellendus. Numquam reiciendis eos
-            tempore, consectetur quia commodi!
+          Nutritrack is a web application designed to help users 
+          track their vitamin and mineral intake, manage their diet, and stay informed about the nutritional value of various foods. The platform also offers insights into vitamin deficiencies and provides recommendations for maintaining a balanced diet.
           </p>
           <div className="footer_social_icons">
             <FaXTwitter className="footer_image" alt="" />

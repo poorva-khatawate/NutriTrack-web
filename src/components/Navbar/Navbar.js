@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 import { RxHamburgerMenu } from "react-icons/rx";
-import cross_icon from "./cross_icon.png";
+// import cross_icon from "./cross_icon.png";
 import { HiXMark } from "react-icons/hi2";
 const Navbar = ({ toggleLoginForm, setToggleLoginForm }) => {
   const [toggleNav, setToggleNav] = useState(false);
