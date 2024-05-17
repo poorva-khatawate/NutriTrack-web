@@ -64,6 +64,10 @@ export default class Home extends Component {
             </div>
           </Link>
         </div>
+        <div className='sq-box7'>
+        
+        </div>
+
       </div>
       </>
       </></>
