@@ -1,7 +1,6 @@
 // src/components/WaterIntake.js
 import React, { useState } from 'react';
 import './WaterIntake.css';
-import Navbar from '../Navbar/Navbar';
 const WaterIntake = () => {
   const [buttonText, setButtonText] = useState('Drink 250ml');
   const [ageRange, setAgeRange] = useState('');
@@ -178,7 +177,7 @@ console.log("Recommendation:", recommendation);
   };
 
   return (
-    <><Navbar />
+    <>
     <div className='water-main'>
           <h1 className='water-h1'>Water Intake Calculator</h1><br />
           <div className="form-group">
