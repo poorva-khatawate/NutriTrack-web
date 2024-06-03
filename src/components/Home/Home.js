@@ -40,6 +40,11 @@ export default class Home extends Component {
             <Link className='inner-link-v' to="/vitaminv">Click here</Link>
           </div>
         </>
+        <div className='sq-box3'>
+          <h2>Monitor Your Daily Water Intake<span>&#8594;</span></h2>
+          <Link className='inner-link-v' to="/water">Click here</Link>
+           
+        </div>
         <div className='sq-box6'>
           <h2>Get food recommendations <br></br>using BMI Calculator <span>&#8594;</span> </h2>
           <Link className='inner-link-v6' to="/bmi">Know more</Link>
