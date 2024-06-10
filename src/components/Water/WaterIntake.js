@@ -1,8 +1,12 @@
 // src/components/WaterIntake.js
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import './WaterIntake.css';
 
 const WaterIntake = () => {
+  useEffect(() => {
+    // Scroll to the top of the page when component mounts
+    window.scrollTo(0, 0);
+  }, []);
   const [ageRange, setAgeRange] = useState('');
   
   const [intakeRecommendation, setIntakeRecommendation] = useState('75% of the human brain is water and 75% of a living tree is water. A person can live about a month without food, but only about a week without water.');
