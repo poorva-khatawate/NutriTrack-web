@@ -6,7 +6,6 @@ import ItemCard from './ItemCard';
 import Tracknavbar from '../Tracknavbar';
 import { Link } from 'react-router-dom';
 import '../CommonCalorie.css';
-import Navbar from '../../Navbar/Navbar';
 export default class Breakfast extends Component {
     componentDidMount() {
         // Scroll to the top of the page when component mounts
@@ -15,7 +14,7 @@ export default class Breakfast extends Component {
     render() {
 
         return (
-            <><Navbar /><><div>
+            <><div>
                 <Tracknavbar />
             </div><div>
                     <CartProvider>
@@ -33,7 +32,7 @@ export default class Breakfast extends Component {
                 </div>
                 <div className='common-cal'>
                     <Link className='view-cart-link' to="/cart">View Cart<span>&#8594;</span></Link>
-                </div></></>
+                </div></>
         )
     }
 }
