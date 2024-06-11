@@ -4,8 +4,11 @@ import "./Navbar.css";
 import { RxHamburgerMenu } from "react-icons/rx";
 // import cross_icon from "./cross_icon.png";
 import { HiXMark } from "react-icons/hi2";
+import { useSelector } from "react-redux";
 const Navbar = ({ toggleLoginForm, setToggleLoginForm }) => {
   const [toggleNav, setToggleNav] = useState(false);
+
+  const state=useSelector(store=>store.button.isLogin);
 
   // const handleLogOut = () => {
   //   signOut(auth).then(() => {
@@ -47,7 +50,10 @@ const Navbar = ({ toggleLoginForm, setToggleLoginForm }) => {
                   Home
                 </Link>
                 {/* <img src={cross_icon} className="cross" alt="cross" onClick={()=>setToggleNav(false)}/> */}
-                <HiXMark className="cross" onClick={()=>setToggleNav(false)} />
+                <HiXMark
+                  className="cross"
+                  onClick={() => setToggleNav(false)}
+                />
               </div>
               <Link to="/about" className="nav-links1">
                 About
@@ -56,7 +62,7 @@ const Navbar = ({ toggleLoginForm, setToggleLoginForm }) => {
                 className="nav-links1 sign_btn"
                 onClick={() => setToggleLoginForm(true)}
               >
-                Sign in
+                {state?"Sign In":"Sign Out"}
               </p>
             </div>
           )}

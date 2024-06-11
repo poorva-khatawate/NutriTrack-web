@@ -12,6 +12,12 @@
     /* font-size: 20px; */
 }
 
+/* text-red-500 font-bold mb-4 */
+.error_message{
+    color:red;
+    font-weight: 500;
+    margin-bottom: 36px;
+}
 
 
 .login_title p{

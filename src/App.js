@@ -38,12 +38,14 @@ import BmiCalculator from "./components/BMI/BmiCalculator";
 import WaterIntake from "./components/Water/WaterIntake";
 import Login2 from "./components/Login2/Login2";
 import Navbar from "./components/Navbar/Navbar";
+import store from "./utils/strore";
+import { Provider } from "react-redux";
 
 function App() {
   const [toggleLoginForm, setToggleLoginForm] = useState(false);
 
   return (
-    <>
+    <Provider store={store}>
       {toggleLoginForm && <Login2 setToggleLoginForm={setToggleLoginForm} />}
 
       <Router>
@@ -94,7 +96,7 @@ function App() {
           <Footer />
         </div>
       </Router>
-    </>
+    </Provider>
   );
 }
 export default App;
