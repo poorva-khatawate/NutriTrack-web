@@ -48,7 +48,7 @@ const Vitaminv = () => {
         </Link>
 
         <Link className="a-v" to="/vitaminvC">
-          {" "}
+         
           <div>
             <img className="sub_image-v" src={vitaminvC} alt="" />
             <p className="text-v">
