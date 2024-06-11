@@ -1,11 +1,34 @@
-/* *,::after,*::before{
+*,::after,*::before{
     margin:0;
     padding:0;
     box-sizing:border-box;
   }
   
+ 
   html{
     position: relative;
     min-height: 100%;
-    padding-bottom: 350px;
-    /* font-family:  */
+    padding-bottom: 400px;
+  }
+
+  .App{
+    height: 100%;
+  }
+
+  @media(max-width:950px){
+    body{
+      padding-bottom: 350px;
+    }
+  }
+
+  @media(max-width:1048px){
+    body{
+      padding-bottom: 350px;
+    }
+  }
+
+  @media(max-width:750px){
+    body{
+      padding-bottom: 680px;
+    }
+  }

@@ -1,55 +1,43 @@
 import React from "react";
 import "./Footer.css";
 import { FaXTwitter } from "react-icons/fa6";
-import { FaYoutube } from "react-icons/fa6";
 import { FaFacebookSquare } from "react-icons/fa";
 import { GrInstagram } from "react-icons/gr";
 
+
 const Footer = () => {
   return (
-    <div className="footer-main">
-      <div className="flex-container-footer">
-        <div>
-          <h1>FoodWeb</h1>
+    <div className="footer" id="footer">
+      <div className="footer_content">
+        <div className="footer_left">
+            <h1 className="footer_icon">Nutritrack</h1>
+          <p>
+          Nutritrack is a web application designed to help users 
+          track their vitamin and mineral intake, manage their diet, and stay informed about the nutritional value of various foods. The platform also offers insights into vitamin deficiencies and provides recommendations for maintaining a balanced diet.
+          </p>
+          <div className="footer_social_icons">
+            <FaXTwitter className="footer_image" alt="" />
+            <FaFacebookSquare className="footer_image" alt="" />
+            <GrInstagram className="footer_image" alt="" />
+          </div>
         </div>
-        <div>
-          <h1>Product</h1>
+        <div className="footer_center">
+          <h1>COMPANY</h1>
           <ul>
-            <li className="footer1">About</li>
-            <li className="footer1">Food</li>
-            <li className="footer1">Exercise</li>
-            <li className="footer1">Apps</li>
-            <li className="footer1">Premium</li>
+            <li>Home</li>
+            <li>About us</li>
+            <li>Privacy Policy</li>
           </ul>
         </div>
-        <div>
-          <h1>Resources</h1>
-          <ul>
-            <li className="footer1">Blog</li>
-            <li className="footer1">Community</li>
-            <li className="footer1">Contact us</li>
-            <li className="footer1">Support Center</li>
-          </ul>
-        </div>
-        <div>
-          <h1>Company</h1>
-          <ul>
-            <li className="footer1">Carrers</li>
-            <li className="footer1">Peer</li>
-          </ul>
+        <div className="footer_right">
+          <h1>GET IN TOUCH</h1>
+          <p>+91794528472</p>
+          <p>contactNutritrack@gmail.com</p>
         </div>
       </div>
-      <div className="flex-box-footer">
-        <span>Copyright © 2024 FoodWeb®. All rights reserved. &#124; </span>
-        <span> Community Guidlines &#124; </span>
-        <span> Privacy Policies &#124; </span>
-        <span> Terms of Use</span>
-      </div>
-      <div className="icons-footer">
-        <FaXTwitter />
-        <FaYoutube />
-        <FaFacebookSquare />
-        <GrInstagram />
+      <hr />
+      <div className="footer_copyright">
+        <p>COPYRIGT 2024 Nutritrack.com &#169;- All Right Reserved.</p>
       </div>
     </div>
   );

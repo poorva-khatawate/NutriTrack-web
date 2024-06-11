@@ -1,7 +1,6 @@
 import './VitaminC.css';
 import Table from 'react-bootstrap/Table';
 import React, { Component } from 'react';
-import Navbar from '../Navbar/Navbar';
 export default class VitaminC extends Component {
   componentDidMount() {
     // Scroll to the top of the page when component mounts
@@ -9,7 +8,7 @@ export default class VitaminC extends Component {
   }
   render() {
     return (
-      <><Navbar /><>
+     
         <div className='vitc'>
           <div className='vitc-main'>
             <img className='vitc-img' src='https://as2.ftcdn.net/v2/jpg/01/16/75/53/1000_F_116755366_yBPTI53Dpm8HAGd2XjdUIoGtqmh71KMq.jpg' alt='vita' />
@@ -254,7 +253,7 @@ export default class VitaminC extends Component {
             </div>
           </div>
         </div>
-      </></>
+
     );
   }
 }

@@ -1,7 +1,6 @@
 import './VitaminB.css';
 import Table from 'react-bootstrap/Table';
 import React, { Component } from 'react';
-import Navbar from '../Navbar/Navbar';
 export default class VitaminB extends Component {
   componentDidMount() {
     // Scroll to the top of the page when component mounts
@@ -9,7 +8,7 @@ export default class VitaminB extends Component {
   }
   render() {
     return (
-      <><Navbar /><>
+    
         <div className='vitb'>
           <div className='vitb-main'>
             <img className='vitb-img' src='https://media.istockphoto.com/id/1256627955/photo/high-vitamin-b-sources-assortment.jpg?s=612x612&w=0&k=20&c=wdG6bIfiM6PalrOiQrYi8AOYTP11s57MdRcpS8XPyc8=' alt='vita' />
@@ -159,7 +158,7 @@ export default class VitaminB extends Component {
             </div>
           </div>
         </div>
-      </></>
+  
     );
   }
 }

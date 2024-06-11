@@ -3,7 +3,7 @@ import vitaminK_iconv from './assests/images/VitaminK_inner.webp'
 import vitaminK_icon1v from "./assests/images/VitaminK_head.jpg";
 import "./VitaminvK.css";
 import { Link } from "react-router-dom";
-import Navbar from "../Navbar/Navbar";
+
 // import { Nav } from "react-bootstrap";
 const VitaminvK = () => {
   useEffect(() => {
@@ -11,7 +11,7 @@ const VitaminvK = () => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <><Navbar /><div className="vitaminK-container-v">
+    <><div className="vitaminK-container-v">
       <div className="vitaminK-inner-container-v">
         <p className="vitaminK-heading-v">Vitamin K</p>
         <div className="image-container-vitaminK-v">

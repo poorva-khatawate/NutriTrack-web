@@ -3,14 +3,13 @@ import vitaminC_iconv from "./assests/images/VitaminC.jpg";
 import vitaminC_icon1v from "./assests/images/VitaminC_head_cleanup.jpg";
 import "./VitaminvC.css";
 import { Link } from "react-router-dom";
-import Navbar from "../Navbar/Navbar";
 const VitaminvC = () => {
   useEffect(() => {
     // Scroll to the top of the page when component mounts
     window.scrollTo(0, 0);
   }, []);
   return (
-    <><Navbar /><div className="vitaminC-container-v">
+    <><div className="vitaminC-container-v">
       <div className="vitaminC-inner-container-v">
         <p className="vitaminC-heading-v">Vitamin C </p>
         <div className="image-container-vitaminC-v">

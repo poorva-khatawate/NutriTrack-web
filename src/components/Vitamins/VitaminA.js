@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './VitaminA.css';
 import Table from 'react-bootstrap/Table';
-import Navbar from '../Navbar/Navbar';
 export default class VitaminA extends Component {
   componentDidMount() {
     // Scroll to the top of the page when component mounts
@@ -9,7 +8,7 @@ export default class VitaminA extends Component {
   }
   render() {
     return (
-      <><Navbar /><>
+     
         <div className='vita'>
           <div className='vita-main'>
             <img className='vita-img' src='https://www.healthifyme.com/blog/wp-content/uploads/2018/07/vitamin-a-feature-1024x683.jpeg' alt='vita' />
@@ -268,7 +267,7 @@ export default class VitaminA extends Component {
             </div>
           </div>
         </div>
-      </></>
+   
     );
   }
 }

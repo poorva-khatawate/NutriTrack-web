@@ -8,14 +8,13 @@ import vitaminvD from "./assests/images/VitaminD_outerjpg.jpg";
 import vitaminvE from "./assests/images/vitaminE_outer2.jpg";
 import vitaminvK from "./assests/images/Vitamin-K-outer.jpg";
 import { Link } from "react-router-dom";
-import Navbar from "../Navbar/Navbar";
 const Vitaminv = () => {
   useEffect(() => {
     // Scroll to the top of the page when component mounts
     window.scrollTo(0, 0);
   }, []);
   return (
-    <><Navbar /><div className="vitaminv-container">
+    <><div className="vitaminv-container">
       <div className="heading-v">Vitamins</div>
       <p className="header-text-v">
         Vitamin deficiency occurs when your body doesn't get enough of a particular vitamin to maintain proper health and function. Each vitamin plays a unique role in the body, such as supporting immune function, aiding in energy

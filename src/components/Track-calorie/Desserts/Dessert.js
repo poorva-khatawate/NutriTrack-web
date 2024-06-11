@@ -5,7 +5,6 @@ import { CartProvider } from 'react-use-cart';
 // import Cart from '../Cart';
 import Tracknavbar from '../Tracknavbar';
 import { Link } from 'react-router-dom';
-import Navbar from '../../Navbar/Navbar';
 import '../CommonCalorie.css';
 export default class Beverages extends Component {
     componentDidMount() {
@@ -15,9 +14,10 @@ export default class Beverages extends Component {
   render() {
     
     return (
-        <><Navbar /><><div>
+        <><><div>
             <Tracknavbar />
-        </div><div>
+        </div>
+        <div className='cards-comp'>
                 <CartProvider>
                     <h1 className='cal-h1-track text-center mt-3'>Dessert Items</h1>
                     <section className='py-4 container'>

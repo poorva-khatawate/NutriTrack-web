@@ -1,40 +1,72 @@
 .main-caloriehome{
-    background-color: rgb(231, 242, 246);
-    display: flex;
-    flex-direction: column;
+  background-color: rgb(231, 242, 246);
+  display: flex;
+  flex-direction: column;
 }
 .h1-calorie-main {
-    font-size: 80px;
-    padding-top: 40px;
-    margin: 0 auto;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    padding-bottom: 30px;
-    color: #333; /* Dark gray color */
-    text-align: center; /* Center align the text */
-    text-transform: uppercase; /* Convert text to uppercase */
-    letter-spacing: 2px; /* Add letter spacing for better readability */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add subtle text shadow */
+  font-size: 80px;
+  padding-top: 40px;
+  margin: 0 auto;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding-bottom: 30px;
+  color: #333; /* Dark gray color */
+  text-align: center; /* Center align the text */
+  text-transform: uppercase; /* Convert text to uppercase */
+  letter-spacing: 2px; /* Add letter spacing for better readability */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add subtle text shadow */
 }
 .h3-calorie-main {
-    font-size: 30px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    padding-top: 20px;
-    margin: 0 auto;
-    padding-bottom: 30px;
-    color: #666; /* Medium gray color */
-    text-align: center; /* Center align the text */
-    text-transform: uppercase; /* Convert text to uppercase */
-    letter-spacing: 1px; /* Add letter spacing for better readability */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Add subtle text shadow */
+  font-size: 30px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding-top: 20px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  color: #666; /* Medium gray color */
+  text-align: center; /* Center align the text */
+  text-transform: uppercase; /* Convert text to uppercase */
+  letter-spacing: 1px; /* Add letter spacing for better readability */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Add subtle text shadow */
 }
 .comp1{
-   padding-top: 20px;
+ padding-top: 20px;
+}
+.card:hover {
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2); /* Adjust the shadow as needed */
+  transition: box-shadow 0.3s ease; /* Add smooth transition */
 }
 .card-img-top {
-    height: 300px; /* Adjust the height as needed */
-    object-fit: cover; /* Ensures the image covers the entire space */
+  height: 300px; /* Adjust the height as needed */
+  object-fit: cover; /* Ensures the image covers the entire space */
+}
+.cal-home-link{
+  text-decoration: none;
+  color: rgb(30, 30, 59);
+}
+
+/* For screens smaller than 768px (tablets and phones) */
+@media (max-width: 768px) {
+  .h1-calorie-main {
+    font-size: 60px; /* Reduce the font size for the main heading */
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
-  .cal-home-link{
-    text-decoration: none;
-    color: rgb(30, 30, 59);
+  .h3-calorie-main {
+    font-size: 24px; /* Reduce the font size for the subheading */
+    padding-top: 10px;
+    padding-bottom: 20px;
   }
+}
+
+/* For screens smaller than 576px (phones) */
+@media (max-width: 576px) {
+  .h1-calorie-main {
+    font-size: 25px; /* Further reduce the font size for smaller phones */
+  }
+  .h3-calorie-main {
+    font-size: 17px; /* Further reduce the font size for smaller phones */
+  }
+  .card-img-top {
+    width:100px;
+    height: 200px; /* Further reduce the height for smaller phones */
+  }
+}

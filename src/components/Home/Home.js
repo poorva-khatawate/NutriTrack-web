@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import './Home.css';
 import { Link } from 'react-router-dom';
 import Videoser from './Video/searchele.mp4';
-import Navbar from '../Navbar/Navbar';
 // import { NavDropdown } from 'react-bootstrap';
 export default class Home extends Component {
   componentDidMount() {
@@ -11,14 +10,14 @@ export default class Home extends Component {
   }
   render() {
     return (
-      <><Navbar /><><><div className='sq-main'>
+      <><><><div className='sq-main'>
         <><div className='sq-box1'>
           <div className='box1-inner'>
             <h1 className='be-h'>Be healthy</h1>
             <h1 className='be-h'>Choose what you eat!</h1>
             <h2 className='be-h'>Learn about the nutrients of the food you eat</h2>
             <h3 className='be-h'>Count your calories</h3>
-            <Link to="/" className='btn-login'>Get started <span>&#8594;</span></Link>
+            <Link to="/about" className='btn-login'>Get started <span>&#8594;</span></Link>
           </div>
           <div className='box2-inner'>
             <img className='img-box2' src="https://images.pexels.com/photos/1092730/pexels-photo-1092730.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt='img'></img>
@@ -41,6 +40,11 @@ export default class Home extends Component {
             <Link className='inner-link-v' to="/vitaminv">Click here</Link>
           </div>
         </>
+        <div className='sq-box3'>
+          <h2>Monitor Your Daily Water Intake<span>&#8594;</span></h2>
+          <Link className='inner-link-v' to="/water">Click here</Link>
+           
+        </div>
         <div className='sq-box6'>
           <h2>Get food recommendations <br></br>using BMI Calculator <span>&#8594;</span> </h2>
           <Link className='inner-link-v6' to="/bmi">Know more</Link>
@@ -65,6 +69,10 @@ export default class Home extends Component {
             </div>
           </Link>
         </div>
+        <div className='sq-box7'>
+        
+        </div>
+
       </div>
       </>
       </></>

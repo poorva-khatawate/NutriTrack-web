@@ -10,7 +10,7 @@ function BmiCalculator() {
     const [recommendations, setRecommendations] = useState([]);
     const [error, setError] = useState(null); // New state for error handling
 
-    const apiKey = 'da9155bc121d47308be85494618800e7'; //input your API_KEY
+    const apiKey = ''; //input your API_KEY
 
     const calculateBMI = (e) => {
         e.preventDefault();

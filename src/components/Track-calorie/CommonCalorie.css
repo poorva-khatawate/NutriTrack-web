@@ -1,4 +1,4 @@
-.cal-h1-track{
+.cal-h1-track {
     font-size: 55px;
     padding-top: 25px;
     color: rgb(56, 30, 82);
@@ -6,14 +6,15 @@
     margin: 0 auto;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
-.common-cal{
+
+.common-cal {
     display: flex;
     align-items: center;
     justify-content: center;
     padding-bottom: 50px;
-
 }
-.view-cart-link{
+
+.view-cart-link {
     text-decoration: none;
     padding: 10px;
     font-size: 55px;
@@ -22,10 +23,35 @@
     margin: 0 auto;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
-.view-cart-link span{
+
+.view-cart-link span {
     padding-left: 15px;
     font-size: 65px;
 }
-.view-cart-link:hover{
+
+.view-cart-link:hover {
     color: rgb(75, 60, 40);
+}
+
+
+
+@media (max-width: 768px) {
+    .cards-comp .row.justify-content-center {
+        flex-wrap: wrap;
+    }
+
+    .cards-comp .col-md-4.mb-4 {
+        flex: 0 0 50%;
+        max-width: 50%;
+        padding: 10px;
+    }
+}
+
+
+@media (max-width: 576px) {
+    .cards-comp .col-md-4.mb-4 {
+        flex-basis: 50%;
+        max-width: 50%;
+        padding: 10px;
+    }
 }

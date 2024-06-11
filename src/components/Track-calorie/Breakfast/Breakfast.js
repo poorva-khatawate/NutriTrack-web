@@ -6,8 +6,6 @@ import { CartProvider } from 'react-use-cart';
 import Tracknavbar from '../Tracknavbar';
 import { Link } from 'react-router-dom';
 import '../CommonCalorie.css';
-import Navbar from '../../Navbar/Navbar';
-import { Nav } from 'react-bootstrap';
 export default class Breakfast extends Component {
   componentDidMount() {
     // Scroll to the top of the page when component mounts
@@ -15,7 +13,7 @@ export default class Breakfast extends Component {
   }
   render() {
     return (
-      <><Navbar /><><div>
+      <><><div>
         <Tracknavbar />
       </div><div>
           <CartProvider>
