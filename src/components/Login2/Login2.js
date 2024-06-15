@@ -1,7 +1,6 @@
 import React, { useRef, useState } from "react";
 import "./Login2.css";
 import cross_icon from "./cross_icon.png";
-import { validateFormData } from "../../utils/validate";
 import axios from 'axios';
 
 const Login2 = ({ setToggleLoginForm }) => {
@@ -11,12 +10,32 @@ const Login2 = ({ setToggleLoginForm }) => {
   const password = useRef(null);
   const name = useRef(null);
 
+  const validateSignInData = (email, password) => {
+    // Validate email
+    if (!email) return "Email cannot be empty.";
+    const emailCheck = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/.test(email);
+    if (!emailCheck) return "Email is not valid.";
+
+    // Validate password
+    if (!password) return "Password cannot be empty.";
+    const passwordCheck = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/.test(password);
+    if (!passwordCheck) return "Password is not valid.";
+
+    return null; // Return null if no validation errors
+  };
+
+  const validateSignUpData = (name, email, password) => {
+    // Validate name
+    if (!name) return "Name cannot be empty.";
+    const nameCheck = /^[a-zA-Z\s]+$/.test(name);
+    if (!nameCheck) return "Name can only contain characters.";
+
+    // Validate email and password using existing function
+    return validateSignInData(email, password);
+  };
 
   const handleSignIn = async () => {
-    const message = validateFormData(
-      email.current.value,
-      password.current.value
-    );
+    const message = validateSignInData(email.current.value, password.current.value);
     if (message) {
       setErrMessage(message);
     } else {
@@ -43,10 +62,7 @@ const Login2 = ({ setToggleLoginForm }) => {
   };
 
   const handleSignUp = async () => {
-    const message = validateFormData(
-      email.current.value,
-      password.current.value
-    );
+    const message = validateSignUpData(name.current.value, email.current.value, password.current.value);
     if (message) {
       setErrMessage(message);
     } else {
@@ -96,7 +112,7 @@ const Login2 = ({ setToggleLoginForm }) => {
 
         {toggleSignInForm && (
           <p>
-            New to NutriTrack ?{" "}
+            New to NutriTrack?{" "}
             <span
               className="login_bottom"
               onClick={() => setToggleSignInForm(!toggleSignInForm)}
@@ -107,7 +123,7 @@ const Login2 = ({ setToggleLoginForm }) => {
         )}
         {!toggleSignInForm && (
           <p>
-            Already have an account ?{" "}
+            Already have an account?{" "}
             <span
               className="login_bottom"
               onClick={() => setToggleSignInForm(!toggleSignInForm)}
