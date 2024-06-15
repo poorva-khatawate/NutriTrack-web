@@ -40,22 +40,6 @@ export default class Home extends Component {
             <Link className='inner-link-v' to="/vitaminv">Click here</Link>
           </div>
         </>
-        <div className='sq-box3'>
-          <h2>Monitor Your Daily Water Intake<span>&#8594;</span></h2>
-          <Link className='inner-link-v' to="/water">Click here</Link>
-           
-        </div>
-        <div className='sq-box6'>
-          <h2>Get food recommendations <br></br>using BMI Calculator <span>&#8594;</span> </h2>
-          <Link className='inner-link-v6' to="/bmi">Know more</Link>
-        </div>
-        <div className='sq-box4'>
-          <h1>Quick lookup<br></br>of food<br></br>nutritional values<span className='span-sq4'>&#8594;</span></h1>
-          <Link to='/search' className='btn-sq4'>
-            <video className='video-search' src={Videoser} loop autoPlay muted>
-            </video></Link>
-
-        </div>
         <div className='sq-box5'>
           <Link className='link-sq5' to="/nutritionist">
             <div className='inner-sq5'>
@@ -69,6 +53,20 @@ export default class Home extends Component {
             </div>
           </Link>
         </div>
+        <div className='sq-box4'>
+          <h1>Quick lookup<br></br>of food<br></br>nutritional values<span className='span-sq4'>&#8594;</span></h1>
+          <Link to='/search' className='btn-sq4'>
+            <video className='video-search' src={Videoser} loop autoPlay muted>
+            </video></Link>
+        </div>
+        <div className='sq-box6'>
+          <h2>Get food recommendations <br></br>using BMI Calculator <span>&#8594;</span> </h2>
+          <Link className='inner-link-v6' to="/bmi">Know more</Link>
+        </div>
+        <div className='sq-box3'>
+          <h2>Monitor Your Daily Water Intake<span>&#8594;</span></h2>
+          <Link className='inner-link-v' to="/water">Click here</Link>
+        </div> 
         <div className='sq-box7'>
         
         </div>

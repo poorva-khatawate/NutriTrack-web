@@ -66,7 +66,7 @@ span {
     align-items: center;
     flex-direction: column;
     padding: 3px;
-    margin-top: 120px;
+    margin-top: 100px;
     padding-left: 100px;
     gap: 15px;
     
@@ -135,7 +135,7 @@ span {
 }
 
 .sq-box4{
-    padding-bottom: 100px;
+    padding-bottom: 30px;
     /* padding-left:50px; */
     padding-top: 100px;
     display: flex;
@@ -176,7 +176,8 @@ span {
     flex-direction: row;
     gap:120px;
     padding-left: 250px;
-    padding-bottom: 60px;
+    padding-bottom: 30px;
+    padding-top: 40px;
 }
 .sq-box5 h1{
     font-size: 60px;
@@ -195,18 +196,18 @@ span {
 
 /* Define animation for border color change */
 @keyframes borderAnimation {
-  0% { border-color: rgb(142, 108, 108); }
+  0% { border-color: rgb(112, 85, 85); }
   50% { border-color: rgb(255, 0, 0); }
-  100% { border-color: rgb(142, 108, 108); }
+  100% { border-color: rgb(139, 105, 105); }
 }
 
 /* Apply animation to the border */
 .animated-border {
-  animation: borderAnimation 2s infinite;
+  animation: borderAnimation 4s infinite;
 }
 .inner-sq5:hover{
-    background-color: #e8e3ef;
-    box-shadow: 5px 5px 5px rgba(192, 95, 225, 0.4);
+    background-color: #c6bcd5;
+    box-shadow: 5px 5px 5px rgba(202, 139, 222, 0.4);
 
 }
 .link-sq5{
