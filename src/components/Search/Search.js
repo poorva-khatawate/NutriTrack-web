@@ -1,33 +1,41 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Spinner from "./Spinner";
-import './Search.css'
-import { useState } from "react";
-import { useEffect } from "react";
+import './Search.css';
 import { FaSearch } from 'react-icons/fa';
-
 
 function Search() {
   const [query, setQuery] = useState('');
   const [loading, setLoading] = useState(false);
-  //  const [error,setError] = useState(null);
   const [nutritionInfo, setNutritionInfo] = useState(null);
   const [notFound, setNotFound] = useState(false);
+  const [error, setError] = useState(null);
+
   useEffect(() => {
-    // Scroll to the top of the page when component mounts
     window.scrollTo(0, 0);
   }, []);
+
   const API_KEY = 'f8zmBkfwODgKdj3Q96xQpkyRUhvcNDfVr9oBpANO';
 
   useEffect(() => {
-    setNotFound(false); // Reset notFound state when query changes
-    console.log("Use effect called");
+    setNotFound(false);
+    setError(null);
   }, [query]);
 
   const handleSearch = async () => {
+    if (!query.trim()) {
+      setError('Please enter a food item to search.');
+      return;
+    }
+
+    if (/^\d+$/.test(query)) {
+      setError('Please enter a valid food item name, not just numbers.');
+      return;
+    }
+
     setLoading(true);
-    //  setError(null);
     setNutritionInfo(null);
     setNotFound(false);
+    setError(null);
 
     try {
       const response = await fetch(`https://api.nal.usda.gov/fdc/v1/foods/search?query=${query}&api_key=${API_KEY}`);
@@ -45,27 +53,7 @@ function Search() {
 
       if (data.foods && data.foods.length > 0) {
         const foodItem = data.foods[0];
-        // if(foodItem && foodItem.foodNutrients){
         setNutritionInfo({
-          //     name : foodItem.description,
-          //     protein : foodItem.foodNutrients.find(nutrient => nutrient.nutrientId===1003)?.value,
-
-          //     carbohydrate : foodItem.foodNutrients.find(nutrient=> nutrient.nutrientId===1005)?.value ,
-          //     energy : foodItem.foodNutrients.find(nutrient=> nutrient.nutrientId===1008)?.value ,
-          //     fat : foodItem.foodNutrients.find(nutrient=>nutrient.nutrientId===1004)?.value ,
-
-          //     // vitaminA : foodItem.foodNutrients.find(nutrient => nutrient.nutrientId===1104).value,
-
-
-
-
-          //    fiber : foodItem.foodNutrients.find(nutrient=> nutrient.nutrientId===1079)?.value ,
-          //     calcium : foodItem.foodNutrients.find(nutrient=>nutrient.nutrientId===1087)?.value ,
-          //     iron : foodItem.foodNutrients.find(nutrient=>nutrient.nutrientId===1089)?.value ,
-          //     vitaminA : foodItem.foodNutrients.find(nutrient=>nutrient.nutrientId===1104)?.value,
-          //     vitaminC : foodItem.foodNutrients.find(nutrient => nutrient.nutrientId===1162)?.value,
-          //     cholesterol : foodItem.foodNutrients.find(nutrient=>nutrient.nutrientId===1253)?.value
-
           name: foodItem.description,
           protein: getNutrientValue(foodItem.foodNutrients, 1003),
           carbohydrate: getNutrientValue(foodItem.foodNutrients, 1005),
@@ -78,45 +66,35 @@ function Search() {
           vitaminC: getNutrientValue(foodItem.foodNutrients, 1162),
           cholesterol: getNutrientValue(foodItem.foodNutrients, 1253)
         });
-
-        //  console.log(data);
-      }
-      else {
-        console.log("Food Item not found");
-        console.error("Food item not found");
+      } else {
         setNotFound(true);
       }
-    }
-    catch (error) {
-      console.log("An error occured while fetching the data", error);
+    } catch (error) {
+      console.error("An error occurred while fetching the data", error);
     }
 
     setLoading(false);
   };
 
-  // const handleInputChange = (e) => {
-  //     setQuery(e.target.value);
-  //     setNotFound(false); // Reset notFound state
-  // };
-
-
-
   return (
-    <><div className="search-container">
-      <h1 class="page-heading">Food Nutritional Values At A Glance</h1>
+    <div className="search-container">
+      <h1 className="page-heading">Food Nutritional Values At A Glance</h1>
       <div className="search-form">
         <input
           className="search-input"
           type="text"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-          placeholder="Enter food item" />
+          placeholder="Enter food item"
+        />
         <button className="search-button" onClick={handleSearch} disabled={loading}>
-          {loading ? (<Spinner />) : <FaSearch />}</button>
+          {loading ? <Spinner /> : <FaSearch />}
+        </button>
       </div>
       <br />
 
-      {notFound && `No results found for "${query}". Please try another search.`}
+      {error && <p className="error">{error}</p>}
+      {notFound && <p>No results found for "{query}". Please try another search.</p>}
 
       {nutritionInfo && (
         <div className="result-container">
@@ -164,24 +142,11 @@ function Search() {
                 <td>{nutritionInfo.cholesterol}</td>
               </tr>
             </tbody>
-            {/* <p>Carbohydrates : {nutritionInfo.carbohydrate}</p>
-                    <p>Energy : {nutritionInfo.energy}</p>
-                    <p>Fat : {nutritionInfo.fat}</p>
-                    <p>Fiber : {nutritionInfo.fiber}</p>
-                    <p>Calcium : {nutritionInfo.calcium}</p>
-                    <p>Iron : {nutritionInfo.iron}</p>
-                    <p>Vitamin A : {nutritionInfo.vitaminA}</p>
-                    <p>Vitamin C : {nutritionInfo.vitaminC}</p>
-                    <p>Cholesterol : {nutritionInfo.cholesterol}</p> */}
-
-
           </table>
         </div>
       )}
-
-
-    </div></>
-  )
+    </div>
+  );
 }
 
 export default Search;

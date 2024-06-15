@@ -8,13 +8,31 @@ function BmiCalculator() {
     const [bmi, setBmi] = useState('');
     const [status, setStatus] = useState('');
     const [recommendations, setRecommendations] = useState([]);
-    const [error, setError] = useState(null); // New state for error handling
+    const [error, setError] = useState(null);
+    const [formError, setFormError] = useState(''); // New state for form validation errors
 
     const apiKey = 'da9155bc121d47308be85494618800e7'; //input your API_KEY
 
+    const validateInputs = () => {
+        if (!weight || !height) {
+            setFormError('Weight and height are required.');
+            return false;
+        }
+        if (isNaN(weight) || isNaN(height)) {
+            setFormError('Weight and height must be numbers.');
+            return false;
+        }
+        if (weight <= 0 || height <= 0) {
+            setFormError('Weight and height must be positive numbers.');
+            return false;
+        }
+        setFormError('');
+        return true;
+    };
+
     const calculateBMI = (e) => {
         e.preventDefault();
-        if (weight && height) {
+        if (validateInputs()) {
             const bmiValue = (weight / Math.pow(height / 100, 2)).toFixed(2);
             setBmi(bmiValue);
             setWeightStatus(bmiValue);
@@ -57,10 +75,23 @@ function BmiCalculator() {
         <div className='container1'>
             <h1 className='title'>BMI Calculator</h1>
             <form className='form' onSubmit={calculateBMI}>
-                <input className="input" type="number" placeholder="Weight in kg" value={weight} onChange={e => setWeight(e.target.value)} />
-                <input className="input" type="number" placeholder="Height in cm" value={height} onChange={e => setHeight(e.target.value)} />
+                <input 
+                    className="input" 
+                    type="number" 
+                    placeholder="Weight in kg" 
+                    value={weight} 
+                    onChange={e => setWeight(e.target.value)} 
+                />
+                <input 
+                    className="input" 
+                    type="number" 
+                    placeholder="Height in cm" 
+                    value={height} 
+                    onChange={e => setHeight(e.target.value)} 
+                />
                 <button className="button" type="submit" >Calculate BMI</button>
             </form>
+            {formError && <p className="error">{formError}</p>}
             {bmi && <p className="result">Your BMI is: {bmi}</p>}
             {status && <p className="status">Your weight status is: {status}</p>}
             {status && <h2 className="subtitle">Food Recommendations:</h2>}
