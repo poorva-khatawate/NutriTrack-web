@@ -8,6 +8,7 @@ NutriTrack is a comprehensive health and nutrition platform designed to help ind
 - [Sustainable Development Goals](#sustainable-development-goals)
 - [Installation](#installation)
 - [Usage](#usage)
+- [Portfolio](#portfolio)
 
 
 ## About
@@ -50,3 +51,7 @@ To run NutriTrack locally, follow these steps:
 
 ## Usage
 After starting the development server, open your web browser and navigate to http://localhost:3000. You can then explore the various features of NutriTrack, including searching for foods, tracking calories, finding foods by vitamins, monitoring daily water intake and connecting with nutritionists.
+
+## Portfolio
+For more information about NutriTrack project, visit my portfolio website:
+`https://01fe21bcs302.wixsite.com/nutritrack`
